@@ -671,6 +671,7 @@ body {
   visibility: visible;
   transform: translateX(0);
 }
+
 .social-header {
   position: relative;
   z-index: 5;
@@ -1186,8 +1187,14 @@ body {
     visibility: visible;
     transform: none;
     position: static;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.35s ease, padding-top 0.35s ease;
   }
   .menu__item .sub-menu {
+    padding-top: 0;
+  }
+  .menu__item.active .menu__external {
     padding-top: 0;
   }
   .menu__item.active .menu__link--parent {
@@ -1280,20 +1287,12 @@ body {
     line-height: 1.5;
     color: #596066;
   }
-  .menu__item .menu__external {
-    overflow: hidden;
-    height: 0;
-    transition: height 0.35s ease, padding-top 0.35s ease;
-  }
-  .menu__item.active .menu__external {
-    padding-top: 0;
-  }
   .icon-menu {
     display: block;
     position: relative;
     width: 1.875rem;
     height: 0.6875rem;
-    z-index: 51;
+    z-index: 55;
   }
   .icon-menu::before, .icon-menu::after {
     content: "";
