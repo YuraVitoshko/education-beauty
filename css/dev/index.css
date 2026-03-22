@@ -571,198 +571,6 @@
   transform: translateY(0);
 }
 
-.form {
-  display: grid;
-  gap: 1rem;
-}
-.form__box {
-  width: 100%;
-  display: grid;
-  row-gap: 0.25rem;
-}
-.form__line {
-  width: 100%;
-  position: relative;
-  border-radius: 1.25rem;
-  border: 0.0625rem solid #CED2D6;
-  transition: border-color 0.3s;
-  background-color: #fff;
-}
-.form__line:focus-within {
-  box-shadow: 0 0 0 0.1875rem #FAE4DF, 0 0.0625rem 0.125rem 0 rgba(16, 24, 40, 0.05);
-}
-.form__line.success {
-  border-color: #287D3C;
-}
-.form__line.error {
-  position: relative;
-  border-color: #E02424;
-}
-.form__line.error::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 1.125rem;
-  transform: translateY(-50%);
-  width: 1.25rem;
-  height: 1.25rem;
-  background: url(../assets/img/icons/warn.svg) 0 0 no-repeat;
-}
-.form__valid {
-  font-size: 0.75rem;
-  line-height: 1.33;
-  color: #E02424;
-  display: none;
-}
-.form__label {
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #383F45;
-}
-.form__box-textarea {
-  display: grid;
-  row-gap: 0.25rem;
-}
-.form__counter {
-  color: #9EA5AD;
-}
-.form__textarea {
-  min-height: 6.25rem;
-  max-height: 12.5rem;
-  outline: none;
-  resize: vertical;
-  padding: 0.75rem 1rem;
-  background-color: #fff;
-  border-radius: 1.5rem;
-  transition: border-color 0.3s;
-}
-.form__textarea:focus-within {
-  border-color: #F1A99A;
-}
-.form__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding-top: 1.25rem;
-  border-top: 0.0625rem solid #E5E7EA;
-}
-.form__bottom span {
-  color: #676E76;
-  font-size: 0.75rem;
-  line-height: 1.3;
-}
-.form__button {
-  justify-content: center;
-}
-.form__footer {
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-
-.form__line.error + .form__valid {
-  display: block;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.input {
-  width: 100%;
-  caret-color: inherit;
-  padding: 0.75rem 1rem;
-  border-radius: 1.5rem;
-  outline: none;
-  transition: border-color 0.3s;
-}
-.input--pl {
-  padding-left: 9.375rem;
-}
-
-.input::placeholder {
-  transition: opacity 0.3s;
-  line-height: 1.5;
-  color: #9EA5AD;
-}
-.input:focus .form__label-tel {
-  opacity: 0;
-}
-
-textarea::placeholder {
-  color: #9EA5AD;
-}
-
-.checkbox {
-  display: inline-block;
-  position: relative;
-}
-.checkbox:not(:last-child) {
-  margin-bottom: 0.3125rem;
-}
-.checkbox--mb:not(:last-child) {
-  margin-bottom: 2.75rem;
-}
-.checkbox__input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.checkbox__input:focus-visible + .checkbox__text {
-  outline: 0.0625rem solid #000;
-}
-.checkbox__input:checked + .checkbox__text:after {
-  display: block;
-}
-.checkbox__input:checked + .checkbox__text::before {
-  background-color: #E35336;
-  border-color: #E35336;
-  outline: 0.1875rem solid #FAE4DF;
-}
-.checkbox__text {
-  line-height: 1.33;
-  color: #676E76;
-  cursor: pointer;
-  position: relative;
-  column-gap: 0.75rem;
-  display: inline-flex;
-  align-items: center;
-}
-.checkbox__text:before {
-  content: "";
-  border-radius: 0.25rem;
-  align-self: flex-start;
-  flex: 0 0 1.25rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  background-color: transparent;
-  border: 0.0625rem solid #9EA5AD;
-}
-.checkbox__text::after {
-  content: "";
-  width: 0.875rem;
-  height: 0.8125rem;
-  background: url(../assets/img/icons/check-form.svg) center no-repeat;
-  display: none;
-  position: absolute;
-  left: 0.1875rem;
-  top: 0.1875rem;
-}
-.checkbox__body {
-  font-size: 0.75rem;
-  line-height: 1.33;
-}
-.checkbox__body a {
-  text-decoration: underline;
-}
-
 .reviews {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
@@ -1378,12 +1186,6 @@ textarea::placeholder {
   .contacts__box {
     padding: 3.75rem 1.25rem;
   }
-  .form__line {
-    border-radius: 1rem;
-  }
-  .form__textarea {
-    border-radius: 1rem;
-  }
   .reviews {
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
@@ -1445,21 +1247,11 @@ textarea::placeholder {
     width: 1.25rem;
     height: 1.25rem;
   }
-  .form__bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 
 @media (any-hover: hover) {
   .gallery__item img:hover {
     scale: 1.05;
-  }
-  .form__line:hover {
-    border-color: #E35336;
-  }
-  .form__textarea:hover {
-    border-color: #BD452D;
   }
   .spollers-faq__body a:hover {
     color: #E35336;

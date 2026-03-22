@@ -1,5 +1,5 @@
 import "./main.min.js";
-import "./spollers.min.js";
+import "./tel-form.min.js";
 import "./slider.min.js";
 import "./watcher.min.js";
 import "./index.min2.js";
@@ -103,15 +103,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
     document.addEventListener("fullscreenchange", () => {
+      const box = videoBlock.querySelector(".video-block__box");
       if (document.fullscreenElement === videoBlock) {
         if (fullscreenIcon) fullscreenIcon.src = "assets/img/icons/fullscreen-exit.svg";
         video.style.objectFit = "contain";
         hideTimeout = setTimeout(() => nav?.classList.add("hidden"), 2e3);
+        if (box) box.style.maxWidth = "100%";
       } else {
         if (fullscreenIcon) fullscreenIcon.src = "assets/img/icons/fullscreen.svg";
         video.style.objectFit = "cover";
         nav?.classList.remove("hidden");
         clearTimeout(hideTimeout);
+        if (box) box.style.maxWidth = "580px";
       }
     });
     const observer = new IntersectionObserver((entries) => {

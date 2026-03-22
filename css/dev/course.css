@@ -5,6 +5,7 @@
 }
 .video-block__box {
   position: relative;
+  max-width: 36.25rem;
 }
 .video-block__item {
   border-radius: 1.5rem;

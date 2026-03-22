@@ -1,5 +1,5 @@
 import "./main.min.js";
-import "./spollers.min.js";
+import "./tel-form.min.js";
 import "./slider.min.js";
 import "./watcher.min.js";
 import "./index.min2.js";
@@ -87,7 +87,7 @@ const marquee = () => {
       onResize();
     };
     const setBaseStyles = (firstScreenVisibleSize2) => {
-      let baseStyle = "display: flex; flex-wrap: nowrap;";
+      let baseStyle = "display: flex; flex-wrap: nowrap; align-items: center;";
       if (isVertical) {
         baseStyle += `
 				flex-direction: column;
