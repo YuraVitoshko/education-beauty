@@ -1,0 +1,105 @@
+<svg viewBox="0 0 2285.71 2285.71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2285.714355" height="2285.714844" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_3">
+			<effect x="0.000000" y="0.000000" visibility="visible" fill="rgb(255,255,255)" fill-opacity="1" effectType="innerShadow" showShadowBehind="1" stdDeviation="91.4285736" radius="0" />
+			<effect x="0.000000" y="3.657143" visibility="visible" fill="rgb(15,15,16)" fill-opacity="0.0500000007" effectType="dropShadow" stdDeviation="182.857147" radius="0" />
+		</g>
+		<filter id="filter_3" width="2285.714355" height="2285.714844" x="0.000000" y="0.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_3)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="3.657143" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="60.9523811" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0588235 0 0 0 0 0.0627451 0 0 0 0.05 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="0.000000" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="30.4761906" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="arithmetic" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+			<feBlend result="effect_innerShadow_2" in2="shape" mode="normal" />
+		</filter>
+		<clipPath id="clipPath_15">
+			<rect width="1920.000000" height="1920.000000" x="182.857147" y="179.201172" rx="960.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<g id="pixso_custom_effect_4">
+			<effect x="0.000000" y="0.000000" visibility="visible" fill="rgb(255,255,255)" fill-opacity="1" effectType="innerShadow" showShadowBehind="1" stdDeviation="91.4285736" radius="0" />
+			<effect x="0.000000" y="3.657143" visibility="visible" fill="rgb(15,15,16)" fill-opacity="0.0500000007" effectType="dropShadow" stdDeviation="182.857147" radius="0" />
+		</g>
+		<filter id="filter_4" width="1737.142822" height="1737.142578" x="274.285706" y="410.287109" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_4)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="3.657143" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="60.9523811" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0588235 0 0 0 0 0.0627451 0 0 0 0.05 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="0.000000" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="30.4761906" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="arithmetic" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+			<feBlend result="effect_innerShadow_2" in2="shape" mode="normal" />
+		</filter>
+		<clipPath id="clipPath_16">
+			<rect width="1371.428467" height="1371.428467" x="457.142853" y="589.488281" rx="685.714233" fill="rgb(255,255,255)" />
+		</clipPath>
+		<g id="pixso_custom_effect_5">
+			<effect x="0.000000" y="0.000000" visibility="visible" fill="rgb(255,255,255)" fill-opacity="1" effectType="innerShadow" showShadowBehind="1" stdDeviation="91.4285736" radius="0" />
+			<effect x="0.000000" y="3.657143" visibility="visible" fill="rgb(15,15,16)" fill-opacity="0.0500000007" effectType="dropShadow" stdDeviation="182.857147" radius="0" />
+		</g>
+		<filter id="filter_5" width="1325.714355" height="1325.714844" x="480.000000" y="616.001953" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_5)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="3.657143" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="60.9523811" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0588235 0 0 0 0 0.0627451 0 0 0 0.05 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="0.000000" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="30.4761906" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="arithmetic" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+			<feBlend result="effect_innerShadow_2" in2="shape" mode="normal" />
+		</filter>
+		<clipPath id="clipPath_17">
+			<rect width="960.000000" height="960.000000" x="662.857178" y="795.203125" rx="480.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<g id="pixso_custom_effect_6">
+			<effect x="0.000000" y="0.000000" visibility="visible" fill="rgb(255,255,255)" fill-opacity="1" effectType="innerShadow" showShadowBehind="1" stdDeviation="91.4285736" radius="0" />
+			<effect x="0.000000" y="3.657143" visibility="visible" fill="rgb(15,15,16)" fill-opacity="0.0500000007" effectType="dropShadow" stdDeviation="182.857147" radius="0" />
+		</g>
+		<filter id="filter_6" width="960.000000" height="960.000000" x="662.857178" y="798.857422" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_6)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="0.000000" dy="3.657143" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="60.9523811" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0588235 0 0 0 0 0.0627451 0 0 0 0.05 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="0.000000" dy="0.000000" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="30.4761906" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="arithmetic" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+			<feBlend result="effect_innerShadow_2" in2="shape" mode="normal" />
+		</filter>
+	</defs>
+	<g opacity="0.800000012" filter="url(#filter_3)" customFrame="url(#clipPath_15)">
+		<rect id="Background+Shadow" width="1920.000000" height="1920.000000" x="182.857147" y="179.201172" rx="960.000000" fill="rgb(245,246,250)" />
+		<g id="Background+Shadow" opacity="0.800000012" filter="url(#filter_4)" customFrame="url(#clipPath_16)">
+			<rect id="Background+Shadow" width="1371.428467" height="1371.428467" x="457.142853" y="589.488281" rx="685.714233" fill="rgb(245,246,250)" />
+			<g id="Background+Shadow" opacity="0.800000012" filter="url(#filter_5)" customFrame="url(#clipPath_17)">
+				<rect id="Background+Shadow" width="960.000000" height="960.000000" x="662.857178" y="795.203125" rx="480.000000" fill="rgb(245,246,250)" />
+				<g filter="url(#filter_6)">
+					<rect id="Background+Shadow" width="594.285706" height="594.285706" x="845.714355" y="978.058594" rx="297.142853" opacity="0.800000012" fill="rgb(245,246,250)" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
