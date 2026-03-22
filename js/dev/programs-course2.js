@@ -1,1 +1,1 @@
-import "./index.min2.js";
+import "./common.min2.js";

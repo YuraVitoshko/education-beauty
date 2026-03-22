@@ -1,9 +1,8 @@
-import "./main.min.js";
+import "./common.min2.js";
 import "./tel-form.min.js";
 import "./slider.min.js";
 import "./watcher.min.js";
 import "./index.min2.js";
-/* empty css           */
 import "./common.min.js";
 const marquee = () => {
   const $marqueeArray = document.querySelectorAll("[data-fls-marquee]");
