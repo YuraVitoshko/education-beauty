@@ -1,8 +1,9 @@
 import "./main.min.js";
-import "./index.min2.js";
 import "./spollers.min.js";
 import "./slider.min.js";
 import "./watcher.min.js";
+import "./index.min2.js";
+/* empty css           */
 import "./common.min.js";
 document.addEventListener("DOMContentLoaded", () => {
   function setEqualHeight() {
