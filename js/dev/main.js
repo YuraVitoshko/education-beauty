@@ -238,6 +238,8 @@ class SelectConstructor {
   }
   // Функція ініціалізації конкретного селекту
   selectInit(originalSelect, index) {
+    if (originalSelect.parentElement.classList.contains(this.selectClasses.classSelect)) return;
+    index ? originalSelect.dataset.flsSelectId = index : null;
     index ? originalSelect.dataset.flsSelectId = index : null;
     if (originalSelect.options.length) {
       const _this = this;
@@ -588,7 +590,11 @@ class SelectConstructor {
     }));
   }
 }
-document.querySelector("select[data-fls-select]") ? window.addEventListener("load", () => window.flsSelect = new SelectConstructor({})) : null;
+if (document.querySelector("select[data-fls-select]")) {
+  window.addEventListener("load", () => {
+    if (!window.flsSelect) window.flsSelect = new SelectConstructor({});
+  });
+}
 function menuInit() {
   document.addEventListener("click", function(e) {
     if (bodyLockStatus && e.target.closest("[data-fls-menu]")) {
