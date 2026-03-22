@@ -1262,10 +1262,12 @@ body {
     padding: 0;
     border-radius: 0;
     display: block;
+    border: none;
   }
   .sub-menu__list {
     width: 100%;
     padding-left: 1.25rem;
+    border: none;
   }
   .sub-menu__item {
     position: static;

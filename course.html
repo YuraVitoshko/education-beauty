@@ -7,21 +7,20 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774188365606" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774193904471" async></script>
 		<title>Course Info</title>
-		<script type="module" crossorigin="" src="./js/course.min.js?v=1774188365606"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774188365606">
-		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1774188365606">
-		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774188365606">
-		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774188365606">
-		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774188365606">
-		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774188365606">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1774188365606">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774188365606">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774188365606">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774188365606">
-		<link rel="stylesheet" crossorigin="" href="./css/course.min.css?v=1774188365606">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774188365606">
+		<script type="module" crossorigin="" src="./js/course.min.js?v=1774193904471"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774193904471">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774193904471">
+		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774193904471">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774193904471">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774193904471">
+		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774193904471">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774193904471">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774193904471">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774193904471">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774193904471">
+		<link rel="stylesheet" crossorigin="" href="./css/course.min.css?v=1774193904471">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -118,7 +117,7 @@
 													</li>
 													<li class="sub-menu__item">
 														<a href="#" class="sub-menu__link">
-															Szkolenia online
+															<span>Szkolenia online</span>
 															<svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M0.75 0.75L7 7L0.749999 13.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg>
@@ -210,8 +209,8 @@
 				</div>
 			</header>
 			<main class="page">
-				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774188365606"></script>
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774188365606">
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774193904471"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774193904471">
 				<div class="page__course">
 					<section class="course-hero">
 						<div class="course-hero__container">
@@ -330,6 +329,23 @@
 									<div class="item-who__text">Bardzo polecam! Długo się zastanawiałam</div>
 								</li>
 							</ul>
+							<!--
+<div class="who-is-the-course__video video-who-is-the-course">
+<div class="video-who-is-the-course__box">
+<video class="video-who-is-the-course__item" poster="../../../assets/img/poster.png" controlsList="nodownload" loop
+playsinline preload="metadata">
+<source src="../../../assets/video/hero-video.mp4" type="video/mp4">
+</video>
+<div class="video-who-is-the-course__nav nav-video-who-is-the-course">
+<button class="nav-video-who-is-the-course__btn-play"><img src="@img/icons/play.svg" alt="Play"></button>
+<button class="nav-video-who-is-the-course__btn-pause"><img src="@img/icons/pause.svg" alt="Pause"></button>
+<button class="nav-video-who-is-the-course__btn-mute"><img src="@img/icons/sound-off.svg" alt="Sound-on"></button>
+<button class="nav-video-who-is-the-course__fullscreen"><img src="@img/icons/fullscreen.svg"
+alt="Fullscreen"></button>
+</div>
+</div>
+</div>
+-->
 							<div class="who-is-the-course__video video-block">
 								<div class="video-block__box">
 									<video class="video-block__item" poster="./assets/img/poster.png" controlslist="nodownload" loop playsinline="" preload="metadata">
@@ -373,7 +389,7 @@
 							</div>
 							<div class="gallery__box-pc">
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
-									<img src="./assets/img/about-us/img01.webp" alt="Image">
+									<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
 									<picture>
@@ -386,10 +402,10 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
-									<img src="./assets/img/about-us/img04.webp" alt="Image">
+									<img src="./assets/img/about-us/img06.jpg/04.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
-									<img src="./assets/img/about-us/img01.webp" alt="Image">
+									<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
 									<picture>
@@ -402,7 +418,7 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
-									<img src="./assets/img/about-us/img04.webp" alt="Image">
+									<img src="./assets/img/about-us/img06.jpg/04.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
 									<picture>
@@ -415,7 +431,7 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
-									<img src="./assets/img/about-us/img04.webp" alt="Image">
+									<img src="./assets/img/about-us/img09.jpg/07.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
 									<picture>
@@ -428,7 +444,7 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
-									<img src="./assets/img/about-us/img01.webp" alt="Image">
+									<img src="./assets/img/about-us/img08.jpg/10.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
 									<picture>
@@ -443,7 +459,7 @@
 							</div>
 							<div class="gallery__box-mobile">
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
-									<img class="gallery__preview" src="./assets/img/about-us/img01.webp" alt="Image">
+									<img class="gallery__preview" src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
 									<picture>
@@ -456,10 +472,10 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
-									<img class="gallery__preview" src="./assets/img/about-us/img02.webp" alt="Image">
+									<img class="gallery__preview" src="./assets/img/about-us/img06.jpg/04.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
-									<img class="gallery__preview" src="./assets/img/about-us/img02.webp" alt="Image">
+									<img class="gallery__preview" src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
 									<picture>
@@ -472,7 +488,7 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
-									<img class="gallery__preview" src="./assets/img/about-us/img04.webp" alt="Image">
+									<img class="gallery__preview" src="./assets/img/about-us/img06.jpg/04.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
 									<picture>
@@ -485,7 +501,7 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
-									<img class="gallery__preview" src="./assets/img/about-us/img03.webp" alt="Image">
+									<img class="gallery__preview" src="./assets/img/about-us/img09.jpg/07.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
 									<picture>
@@ -498,7 +514,7 @@
 									</picture>
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
-									<img class="gallery__preview" src="./assets/img/about-us/img04.webp" alt="Image">
+									<img class="gallery__preview" src="./assets/img/about-us/img08.jpg/10.jpg" alt="Image">
 								</div>
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
 									<picture>
