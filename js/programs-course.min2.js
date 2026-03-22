@@ -1,1 +1,1 @@
-import"./main.min.js";
+import"./main.min.js";import{m as t}from"./mixitup.min.js";window.addEventListener("load",()=>{const e=document.querySelector(".programs-course__cards"),o=document.querySelectorAll(".programs-course__control");e&&t(e,{selectors:{target:".programs-course__card"},animation:{duration:250,effects:"fade scale(0.98)",easing:"ease-out",animateResizeContainer:!1}}),o.forEach(r=>{r.addEventListener("click",()=>{o.forEach(a=>a.classList.remove("active")),r.classList.add("active")})})});

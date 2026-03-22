@@ -1,12 +1,14 @@
 import "./main.min.js";
 import { m as mixitup } from "./mixitup.min.js";
+import "./watcher.min.js";
+import "./common.min.js";
 window.addEventListener("load", () => {
-  const container = document.querySelector(".programs-course__cards");
-  const controls = document.querySelectorAll(".programs-course__control");
+  const container = document.querySelector(".blog__items");
+  const controls = document.querySelectorAll(".blog__control");
   if (container) {
     mixitup(container, {
       selectors: {
-        target: ".programs-course__card"
+        target: ".blog__item"
       },
       animation: {
         duration: 250,

@@ -3,6 +3,7 @@ import "./programs-course.min2.js";
 import "./index.min2.js";
 import "./watcher.min.js";
 import "./common.min.js";
+import "./mixitup.min.js";
 document.addEventListener("DOMContentLoaded", () => {
   const controls = document.querySelectorAll(".programs-course__control");
   const cards = document.querySelectorAll(".programs-course__cards .programs-course__card");
