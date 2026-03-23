@@ -789,27 +789,42 @@ function preloader() {
   const htmlDocument = document.documentElement;
   const isPreloaded = localStorage.getItem(location.href) && document.querySelector('[data-fls-preloader="true"]');
   if (preloaderImages.length && !isPreloaded) {
-    let setValueProgress = function(progress2) {
-      showPecentLoad ? showPecentLoad.innerText = `${progress2}%` : null;
-      showLineLoad ? showLineLoad.style.width = `${progress2}%` : null;
+    let setValueProgress = function(value) {
+      showPecentLoad.innerText = `${value}%`;
+      const offset = circumference - value / 100 * circumference;
+      progressBar.style.strokeDashoffset = offset;
     }, imageLoaded = function() {
       imagesLoadedCount++;
       progress = Math.round(100 / preloaderImages.length * imagesLoadedCount);
       const intervalId = setInterval(() => {
-        counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
-        counter >= 100 ? addLoadedClass() : null;
+        if (counter >= progress) {
+          clearInterval(intervalId);
+        } else {
+          setValueProgress(++counter);
+        }
+        if (counter >= 100) addLoadedClass();
       }, 10);
     };
     const preloaderTemplate = `
-			<div class="fls-preloader">
-				<div class="fls-preloader__body">
-					<div class="fls-preloader__counter">0%</div>
-					<div class="fls-preloader__line"><span></span></div>
-				</div>
-			</div>`;
+		<div class="fls-preloader">
+			<div class="fls-preloader__body">
+
+				<svg class="fls-preloader__progress" width="200" height="200">
+					<circle class="fls-preloader__bg" cx="100" cy="100" r="80"></circle>
+					<circle class="fls-preloader__bar" cx="100" cy="100" r="80"></circle>
+				</svg>
+
+				<div class="fls-preloader__counter">0%</div>
+
+			</div>
+		</div>`;
     document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
     document.querySelector(".fls-preloader");
-    const showPecentLoad = document.querySelector(".fls-preloader__counter"), showLineLoad = document.querySelector(".fls-preloader__line span");
+    const showPecentLoad = document.querySelector(".fls-preloader__counter"), progressBar = document.querySelector(".fls-preloader__bar");
+    const radius = 80;
+    const circumference = 2 * Math.PI * radius;
+    progressBar.style.strokeDasharray = circumference;
+    progressBar.style.strokeDashoffset = circumference;
     let imagesLoadedCount = 0;
     let counter = 0;
     let progress = 0;
@@ -817,11 +832,9 @@ function preloader() {
     htmlDocument.setAttribute("data-fls-scrolllock", "");
     preloaderImages.forEach((preloaderImage) => {
       const imgClone = document.createElement("img");
-      if (imgClone) {
-        imgClone.onload = imageLoaded;
-        imgClone.onerror = imageLoaded;
-        preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
-      }
+      imgClone.onload = imageLoaded;
+      imgClone.onerror = imageLoaded;
+      preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
     });
     setValueProgress(progress);
     const preloaderOnce = () => localStorage.setItem(location.href, "preloaded");
