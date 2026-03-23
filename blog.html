@@ -7,15 +7,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774193904467" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774278624070" async></script>
 		<title>All Blog</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774193904467">
-		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774193904467"></script>
-		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774193904467"></script>
-		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774193904467"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774193904467">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774193904467">
-		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1774193904467">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774278624070">
+		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774278624070"></script>
+		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774278624070"></script>
+		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774278624070"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774278624070">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774278624070">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1774278624070">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -191,6 +191,11 @@
 						<!-- <a href="#contacts" data-fls-button class="header__button button">Kupuję kurs</a> -->
 						<div data-fls-dynamic=".menu__list, 1300" class="header__line">
 							<select name="lang" class="header__lang" data-fls-select="">
+								<!--
+<option value="1" selected>PL polski</option>
+<option value="2">UA українська</option>
+<option value="3">RU русский</option>
+-->
 								<option value="1" selected>PL</option>
 								<option value="2">UA</option>
 								<option value="3">RU</option>
@@ -204,27 +209,26 @@
 				</div>
 			</header>
 			<main class="page">
+				<div class="btn-up">
+					<img src="./assets/img/icons/arrow.svg" alt="Image">
+				</div>
 				<div class="page__blog">
 					<section class="blog">
 						<div class="blog__container">
-							<div class="blog__top top-blog">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="top-blog__header-block header-block">
-									<div class="header-block__subtitle">
-										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
-										Blog
-									</div>
-									<h2 class="header-block__title">Intensywny online kurs ze stylizacji rzęs 3w1</h2>
-									<div class="header-block__text">
-										Wiedza z pierwszej ręki o produktach online na podstawie insightów, których nie ma nikt w Polsce.
-									</div>
-								</div>
-							</div>
+							<!--
+<div class="blog__top top-blog">
+<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
+class="top-blog__header-block header-block">
+<div class="header-block__subtitle">
+Blog</div>
+<h2 class="header-block__title">Intensywny online kurs ze stylizacji rzęs 3w1</h2>
+<div class="header-block__text">Wiedza z pierwszej ręki o produktach online na podstawie insightów, których nie ma nikt w Polsce.</div>
+</div>
+</div>
+-->
 							<div class="blog__body">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="blog__header-block header-block">
-									<div class="header-block__subtitle">
-										<img src="./assets/img/icons/rectangle-blue.svg" alt="icon">
-										Artykuły Educational Beauty Center
-									</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="blog__header-block header-block header-block--mw">
+									<div class="header-block__subtitle">Artykuły Educational Beauty Center</div>
 									<h2 class="header-block__title">Od którego tematu zaczniemy?</h2>
 									<div class="header-block__text">
 										Wszystkie kursy są przeznaczone dla początkujących i profesjonalistów pragnących podnieść swój poziom zawodowy.
@@ -238,7 +242,10 @@
 											<button type="button" class="blog__control" data-filter=".eyelash">Stylizacja rzęs</button>
 											<button type="button" class="blog__control" data-filter=".epilation">Depilacja</button>
 											<button type="button" class="blog__control" data-filter=".massage">Masaż</button>
-											<button type="button" class="blog__control" data-filter=".online">Online</button>
+											<button type="button" class="blog__control" data-filter=".online">
+												<img src="./assets/img/icons/icon-play-box.svg" alt="Image">
+												Online
+											</button>
 										</div>
 										<div class="blog__search search-blog">
 											<input type="search" class="search-blog__input" placeholder="Placeholder_input">

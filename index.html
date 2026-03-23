@@ -7,20 +7,20 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774193904474" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774278624074" async></script>
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1774193904474"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774193904474">
-		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774193904474">
-		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774193904474">
-		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774193904474">
-		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774193904474">
-		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774193904474">
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774193904474">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774193904474">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774193904474">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774193904474">
-		<link rel="stylesheet" crossorigin="" href="./css/online-learning.min.css?v=1774193904474">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1774278624074"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774278624074">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774278624074">
+		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774278624074">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774278624074">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774278624074">
+		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774278624074">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774278624074">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774278624074">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774278624074">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774278624074">
+		<link rel="stylesheet" crossorigin="" href="./css/online-learning.min.css?v=1774278624074">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -196,6 +196,11 @@
 						<!-- <a href="#contacts" data-fls-button class="header__button button">Kupuję kurs</a> -->
 						<div data-fls-dynamic=".menu__list, 1300" class="header__line">
 							<select name="lang" class="header__lang" data-fls-select="">
+								<!--
+<option value="1" selected>PL polski</option>
+<option value="2">UA українська</option>
+<option value="3">RU русский</option>
+-->
 								<option value="1" selected>PL</option>
 								<option value="2">UA</option>
 								<option value="3">RU</option>
@@ -209,9 +214,12 @@
 				</div>
 			</header>
 			<main class="page">
-				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774193904474"></script>
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774193904474">
-				<div class="index">
+				<div class="btn-up">
+					<img src="./assets/img/icons/arrow.svg" alt="Image">
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774278624074"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774278624074">
+				<div class="page__home">
 					<section class="hero">
 						<div class="hero__box">
 							<div class="hero__container">
@@ -291,7 +299,9 @@ Ocena na Google
 												<button class="nav-video__btn-mute">
 													<img src="./assets/img/icons/sound-off.svg" alt="Sound-on">
 												</button>
-												<!-- <button class="nav-video__btn-fullscreen"><img src="@img/icons/fullscreen.svg" alt="Fullscreen"></button> -->
+												<button class="nav-video__btn-fullscreen">
+													<img src="./assets/img/icons/fullscreen.svg" alt="Fullscreen">
+												</button>
 											</div>
 										</div>
 									</div>
@@ -329,7 +339,7 @@ Ocena na Google
 					</section>
 					<section class="benefits">
 						<div class="benefits__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="benefits__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="benefits__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									Kurs jest idealny dla
@@ -397,7 +407,7 @@ Ocena na Google
 					</section>
 					<section id="gallery" class="gallery">
 						<div class="gallery__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									Galeria prac kursantek
@@ -556,13 +566,13 @@ Ocena na Google
 					<section class="course-programs">
 						<div class="course-programs__box">
 							<div class="course-programs__container">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="course-programs__header-block header-block">
-									<div class="header-block__subtitle">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="course-programs__header-block header-block header-block--mw header-block--ma">
+									<div class="header-block__subtitle header-block__subtitle--center">
 										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 										Galeria prac kursantek
 									</div>
-									<h2 class="header-block__title">Programy kursów</h2>
-									<div class="header-block__text">
+									<h2 class="header-block__title header-block__title--center">Programy kursów</h2>
+									<div class="header-block__text header-block__text--center">
 										Wszystkie kursy są przeznaczone dla początkujących i profesjonalistów pragnących podnieść swój poziom zawodowy.
 									</div>
 								</div>
@@ -847,7 +857,7 @@ Ocena na Google
 					</section>
 					<section class="deadlines">
 						<div class="deadlines__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									Terminy
@@ -1125,13 +1135,10 @@ Ocena na Google
 					<section class="contacts">
 						<div class="contacts__container">
 							<div class="contacts__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="contacts__header-block header-block">
-									<div class="header-block__subtitle">
-										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
-										Galeria prac kursantek
-									</div>
-									<h2 class="header-block__title">Gotowa na pierwszy krok w nowy zawód?</h2>
-									<div class="header-block__text">Dołącz do kursu i rozpocznij nowy etap swojego życia zawodowego.</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="contacts__header-block header-block header-block--ma header-block--mw">
+									<div class="header-block__subtitle header-block__subtitle--center">Galeria prac kursantek</div>
+									<h2 class="header-block__title header-block__title--center">Gotowa na pierwszy krok w nowy zawód?</h2>
+									<div class="header-block__text header-block__text--center">Dołącz do kursu i rozpocznij nowy etap swojego życia zawodowego.</div>
 								</div>
 								<div class="contacts__body">
 									<div class="contacts__media">
@@ -1191,10 +1198,12 @@ Ocena na Google
 												</div>
 											</div>
 										</label>
-										<button data-fls-button="" type="submit" class="form__button button">
-											Zapisz się na kurs
-											<img src="./assets/img/icons/arrow.svg" alt="arrow">
-										</button>
+										<div class="form__btn">
+											<button data-fls-button="" type="submit" class="form__button button">
+												Zapisz się na kurs
+												<img src="./assets/img/icons/arrow.svg" alt="arrow">
+											</button>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -1386,13 +1395,13 @@ src="@img/icons/arrow-slider.svg" alt="arrow"></button>
 					<section id="faq" class="faq">
 						<div class="faq__container">
 							<div class="faq__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block">
-									<div class="header-block__subtitle">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block header-block--ma header-block--mw">
+									<div class="header-block__subtitle header-block__subtitle--center">
 										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 										FAQ
 									</div>
-									<h2 class="header-block__title">Pytania i odpowiedzi</h2>
-									<div class="header-block__text">
+									<h2 class="header-block__title header-block__title--center">Pytania i odpowiedzi</h2>
+									<div class="header-block__text header-block__text--center">
 										Masz inne pytanie? Napisz na:
 										<a href="mailto:beautycenter.education@gmail.com">beautycenter.education@gmail.com</a>
 									</div>
@@ -1401,7 +1410,8 @@ src="@img/icons/arrow-slider.svg" alt="arrow"></button>
 									<details data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" data-fls-spollers-open="" class="spollers-faq__item">
 										<summary class="spollers-faq__title">
 											<span></span>
-											Mieszkam za granicą, czy mogę kupić kurs jeśli nie mam polskiego
+											Mieszkam za granicą, czy mogę kupić kurs jeśli nie mam
+							polskiego
 							konta?
 										</summary>
 										<div class="spollers-faq__body">
@@ -1412,7 +1422,8 @@ src="@img/icons/arrow-slider.svg" alt="arrow"></button>
 									<details data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="spollers-faq__item">
 										<summary class="spollers-faq__title">
 											<span></span>
-											Nigdy wcześniej nie miałam do czynienia ze stylizacją rzęs. Czy ten
+											Nigdy wcześniej nie miałam do czynienia ze stylizacją
+							rzęs. Czy ten
 							kurs jest dla mnie odpowiedni?
 										</summary>
 										<div class="spollers-faq__body">

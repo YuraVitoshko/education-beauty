@@ -7,20 +7,20 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774193904471" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774278624076" async></script>
 		<title>Course Info</title>
-		<script type="module" crossorigin="" src="./js/course.min.js?v=1774193904471"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774193904471">
-		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774193904471">
-		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774193904471">
-		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774193904471">
-		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774193904471">
-		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774193904471">
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774193904471">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774193904471">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774193904471">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774193904471">
-		<link rel="stylesheet" crossorigin="" href="./css/course.min.css?v=1774193904471">
+		<script type="module" crossorigin="" src="./js/course.min.js?v=1774278624076"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774278624076">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774278624076">
+		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774278624076">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774278624076">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774278624076">
+		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774278624076">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774278624076">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774278624076">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774278624076">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774278624076">
+		<link rel="stylesheet" crossorigin="" href="./css/course.min.css?v=1774278624076">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -196,6 +196,11 @@
 						<!-- <a href="#contacts" data-fls-button class="header__button button">Kupuję kurs</a> -->
 						<div data-fls-dynamic=".menu__list, 1300" class="header__line">
 							<select name="lang" class="header__lang" data-fls-select="">
+								<!--
+<option value="1" selected>PL polski</option>
+<option value="2">UA українська</option>
+<option value="3">RU русский</option>
+-->
 								<option value="1" selected>PL</option>
 								<option value="2">UA</option>
 								<option value="3">RU</option>
@@ -209,8 +214,11 @@
 				</div>
 			</header>
 			<main class="page">
-				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774193904471"></script>
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774193904471">
+				<div class="btn-up">
+					<img src="./assets/img/icons/arrow.svg" alt="Image">
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774278624076"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774278624076">
 				<div class="page__course">
 					<section class="course-hero">
 						<div class="course-hero__container">
@@ -377,7 +385,7 @@ alt="Fullscreen"></button>
 					</section>
 					<section id="gallery" class="gallery gallery--tablet">
 						<div class="gallery__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									Galeria prac kursantek
@@ -613,7 +621,7 @@ alt="Fullscreen"></button>
 					</section>
 					<section class="bonuses-after-training">
 						<div class="bonuses-after-training__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="bonuses-after-training__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="bonuses-after-training__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									Bonusy po szkoleniu
@@ -810,13 +818,11 @@ alt="Fullscreen"></button>
 					<section class="contacts">
 						<div class="contacts__container">
 							<div class="contacts__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="contacts__header-block header-block">
-									<div class="header-block__subtitle">
-										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
-										Galeria prac kursantek
-									</div>
-									<h2 class="header-block__title">Gotowa na pierwszy krok w nowy zawód?</h2>
-									<div class="header-block__text">Dołącz do kursu i rozpocznij nowy etap swojego życia zawodowego.</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="contacts__header-block header-block header-block--ma header-block--mw">
+									<div class="header-block__subtitle header-block__subtitle--center">Galeria prac kursantek</div>
+									<h2 class="header-block__title header-block__title--center">Gotowa na pierwszy krok w nowy zawód?</h2>
+									<div class="header-block__text header-block__text--center">Dołącz do kursu i rozpocznij nowy etap swojego życia
+						zawodowego.</div>
 								</div>
 								<div class="contacts__body">
 									<div class="contacts__media">
@@ -876,10 +882,12 @@ alt="Fullscreen"></button>
 												</div>
 											</div>
 										</label>
-										<button data-fls-button="" type="submit" class="form__button button">
-											Zapisz się na kurs
-											<img src="./assets/img/icons/arrow.svg" alt="arrow">
-										</button>
+										<div class="form__btn">
+											<button data-fls-button="" type="submit" class="form__button button">
+												Zapisz się na kurs
+												<img src="./assets/img/icons/arrow.svg" alt="arrow">
+											</button>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -1089,16 +1097,16 @@ src="@img/icons/arrow-slider.svg" alt="arrow"></button>
 -->
 						</div>
 					</section>
-					<section id="faq" class="faq">
+					<section id="faq" class="faq faq--pb">
 						<div class="faq__container">
 							<div class="faq__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block">
-									<div class="header-block__subtitle">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block header-block--ma header-block--mw">
+									<div class="header-block__subtitle header-block__subtitle--center">
 										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 										FAQ
 									</div>
-									<h2 class="header-block__title">Pytania i odpowiedzi</h2>
-									<div class="header-block__text">
+									<h2 class="header-block__title header-block__title--center">Pytania i odpowiedzi</h2>
+									<div class="header-block__text header-block__text--center">
 										Masz inne pytanie? Napisz na:
 										<a href="mailto:beautycenter.education@gmail.com">beautycenter.education@gmail.com</a>
 									</div>

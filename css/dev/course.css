@@ -540,8 +540,10 @@
     padding-right: 0;
   }
   .course-hero__body {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 1.25rem 2rem;
+  }
+  .course-hero__image {
+    aspect-ratio: 350/260;
   }
   .who-is-the-course {
     padding-top: 3.125rem;

@@ -3,14 +3,6 @@
   padding-top: 8.5rem;
   padding-bottom: 3.75rem;
 }
-.about-us__header-block {
-  max-width: 55rem !important;
-  margin: 0 auto;
-}
-.about-us__header-block > * {
-  justify-self: center;
-  text-align: center;
-}
 .about-us__header-block:not(:last-child) {
   margin-bottom: 3.75rem;
 }
@@ -102,9 +94,6 @@
   display: grid;
   row-gap: 3.75rem;
 }
-.our-range__header-block {
-  max-width: 55rem !important;
-}
 .our-range__body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -139,6 +128,7 @@
   align-items: center;
   column-gap: 0.75rem;
   transition: color 0.3s;
+  text-decoration: underline;
 }
 .our-range__link img {
   flex: 0 0 0.3125rem;
@@ -153,14 +143,6 @@
 .instructors__container {
   display: grid;
   row-gap: 3.75rem;
-}
-.instructors__header-block {
-  max-width: 55rem !important;
-  margin: 0 auto;
-}
-.instructors__header-block > * {
-  justify-self: center;
-  text-align: center;
 }
 .instructors__body {
   display: grid;
@@ -247,6 +229,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
+    aspect-ratio: 350/440;
   }
   .our-range__body {
     grid-template-columns: auto;
@@ -270,19 +253,11 @@
     padding-bottom: 3.125rem;
   }
   .about-us__container {
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
-  .about-us__header-block {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
-  .about-us__photos {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
   .about-us__img {
-    aspect-ratio: 184/280;
+    aspect-ratio: 180/220;
   }
   .about-us__statistic-block {
     padding-left: 1.25rem;
@@ -291,6 +266,9 @@
   .certyficat {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  .certyficat__title {
+    font-size: 1.5rem;
   }
   .our-range {
     padding-top: 3.125rem;

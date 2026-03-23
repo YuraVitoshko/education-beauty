@@ -3,42 +3,40 @@
   padding-top: 8.5rem;
   padding-bottom: 3.75rem;
 }
-.programs-course__header-block {
-  max-width: 55rem !important;
-  margin: 0 auto;
-}
-.programs-course__header-block > * {
-  justify-self: center;
-  text-align: center;
-}
 .programs-course__header-block:not(:last-child) {
   margin-bottom: 3.75rem;
 }
 .programs-course__controls {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
+  flex-wrap: wrap;
+  row-gap: 0.625rem;
   column-gap: 0.75rem;
-}
-.programs-course__controls::-webkit-scrollbar {
-  display: none;
 }
 .programs-course__control {
   padding: 0.75rem 1.125rem;
   position: relative;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
   color: #596066;
   border: 0.0625rem solid #9EA5AD;
   line-height: 1.5;
   border-radius: 1rem;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
+.programs-course__control img {
+  flex: 0 0 0.875rem;
+  width: 0.875rem;
+  object-fit: contain;
+}
 .programs-course__control.active {
   color: #fff;
   background-color: #E35336;
   border-color: transparent;
+  cursor: default;
+  pointer-events: none;
 }
 .programs-course__control.disabled {
   color: #E5E7EA;
@@ -47,7 +45,7 @@
   border-color: #E5E7EA;
 }
 .programs-course__cards {
-  padding-top: 3.75rem;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.75rem;
@@ -63,6 +61,7 @@
 @media (max-width: 61.99875em) {
   .programs-course__cards {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
   }
 }
 @media (max-width: 47.99875em) {
@@ -74,6 +73,7 @@
     padding-right: 1.25rem;
   }
   .programs-course__cards {
+    padding-top: 2rem;
     column-gap: 1.25rem;
     grid-template-columns: auto;
   }

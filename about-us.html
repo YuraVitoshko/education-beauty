@@ -7,19 +7,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774193904477" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774278624078" async></script>
 		<title>About Us</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774193904477">
-		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774193904477"></script>
-		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774193904477"></script>
-		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774193904477"></script>
-		<script type="module" crossorigin="" src="./js/slider.min.js?v=1774193904477"></script>
-		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774193904477"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774193904477">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774193904477">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774193904477">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774193904477">
-		<link rel="stylesheet" crossorigin="" href="./css/about-us.min.css?v=1774193904477">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774278624078">
+		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774278624078"></script>
+		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774278624078"></script>
+		<script type="module" crossorigin="" src="./js/slider.min.js?v=1774278624078"></script>
+		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774278624078"></script>
+		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774278624078"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774278624078">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774278624078">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774278624078">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774278624078">
+		<link rel="stylesheet" crossorigin="" href="./css/about-us.min.css?v=1774278624078">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -195,6 +195,11 @@
 						<!-- <a href="#contacts" data-fls-button class="header__button button">Kupuję kurs</a> -->
 						<div data-fls-dynamic=".menu__list, 1300" class="header__line">
 							<select name="lang" class="header__lang" data-fls-select="">
+								<!--
+<option value="1" selected>PL polski</option>
+<option value="2">UA українська</option>
+<option value="3">RU русский</option>
+-->
 								<option value="1" selected>PL</option>
 								<option value="2">UA</option>
 								<option value="3">RU</option>
@@ -208,12 +213,15 @@
 				</div>
 			</header>
 			<main class="page">
-				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774193904477"></script>
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774193904477">
+				<div class="btn-up">
+					<img src="./assets/img/icons/arrow.svg" alt="Image">
+				</div>
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774278624078"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774278624078">
 				<div class="page__about-us">
 					<section class="about-us">
 						<div class="about-us__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="about-us__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="about-us__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									O nas
@@ -268,9 +276,11 @@
 								<div class="statistic-block__item big-item-statistic-block">
 									<h3 class="big-item-statistic-block__title">Naszym celem jest:</h3>
 									<div class="big-item-statistic-block__text">
-										Inspirowanie przyszłych specjalistów branży beauty, odkrywanie dla nich ogromnych możliwości profesjonalnego rozwoju
-					i kreatywnej realizacji, dzięki unikalnym rozwiązaniom i tajnikom rzemiosła, które jesteśmy gotowi przekazać wszystkim
-					chętnym!
+										<p>
+											Inspirowanie przyszłych specjalistów branży beauty, odkrywanie dla nich ogromnych możliwości profesjonalnego rozwoju
+						i kreatywnej realizacji, dzięki unikalnym rozwiązaniom i tajnikom rzemiosła, które jesteśmy gotowi przekazać wszystkim
+						chętnym!
+										</p>
 									</div>
 								</div>
 								<div class="statistic-block__item item-statistic-block">
@@ -336,7 +346,7 @@
 					<section class="our-range">
 						<div class="our-range__box">
 							<div class="our-range__container">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="our-range__header-block header-block">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="our-range__header-block header-block header-block--mw">
 									<div class="header-block__subtitle">
 										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 										Ponad 1000 osób ukończyło nasze szkolenia
@@ -385,7 +395,7 @@
 					</section>
 					<section class="instructors">
 						<div class="instructors__container">
-							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="instructors__header-block header-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="instructors__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
 									<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 									Instruktorzy
@@ -508,14 +518,11 @@
 					<section class="contacts">
 						<div class="contacts__container">
 							<div class="contacts__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="contacts__header-block header-block">
-									<div class="header-block__subtitle">
-										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
-										Galeria prac
-						kursantek
-									</div>
-									<h2 class="header-block__title">Gotowa na pierwszy krok w nowy zawód?</h2>
-									<div class="header-block__text">Dołącz do kursu i rozpocznij nowy etap swojego życia zawodowego.</div>
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="contacts__header-block header-block header-block--ma header-block--mw">
+									<div class="header-block__subtitle header-block__subtitle--center">Galeria prac kursantek</div>
+									<h2 class="header-block__title header-block__title--center">Gotowa na pierwszy krok w nowy zawód?</h2>
+									<div class="header-block__text header-block__text--center">Dołącz do kursu i rozpocznij nowy etap swojego życia
+						zawodowego.</div>
 								</div>
 								<div class="contacts__body">
 									<div class="contacts__media">
@@ -576,10 +583,12 @@
 												</div>
 											</div>
 										</label>
-										<button data-fls-button="" type="submit" class="form__button button">
-											Zapisz się na kurs
-											<img src="./assets/img/icons/arrow.svg" alt="arrow">
-										</button>
+										<div class="form__btn">
+											<button data-fls-button="" type="submit" class="form__button button">
+												Zapisz się na kurs
+												<img src="./assets/img/icons/arrow.svg" alt="arrow">
+											</button>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -772,13 +781,13 @@ src="@img/icons/arrow-slider.svg" alt="arrow"></button>
 					<section id="faq" class="faq">
 						<div class="faq__container">
 							<div class="faq__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block">
-									<div class="header-block__subtitle">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block header-block--ma header-block--mw">
+									<div class="header-block__subtitle header-block__subtitle--center">
 										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 										FAQ
 									</div>
-									<h2 class="header-block__title">Pytania i odpowiedzi</h2>
-									<div class="header-block__text">
+									<h2 class="header-block__title header-block__title--center">Pytania i odpowiedzi</h2>
+									<div class="header-block__text header-block__text--center">
 										Masz inne pytanie? Napisz na:
 										<a href="mailto:beautycenter.education@gmail.com">beautycenter.education@gmail.com</a>
 									</div>
@@ -1001,495 +1010,6 @@ src="@img/icons/arrow-slider.svg" alt="arrow"></button>
 						</div>
 					</section>
 				</div>
-				<!--
-<div data-fls-index data-fls-about-us>
-<section class="about-us">
-<div class="about-us__container">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="about-us__header-block header-block">
-<div class="header-block__subtitle">
-O nas</div>
-<h2 class="header-block__title">Zapraszamy na szkolenie do Educational Beauty Center</h2>
-<div class="header-block__text">Jesteśmy tym zespołem profesjonalistów, którzy pomogą Ci w zdobyciu cennej wiedzy. Edukacja jest dla nas nie tylko
-pasją, ale także ciężką pracą, której ostatecznym celem jest zadowalający rezultat.</div>
-</div>
-<div class="about-us__photos">
-<div class="about-us__img">
-<img src="@img/about-us/img01.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img02.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img03.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img04.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/big05.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img06.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img07.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img08.jpg" alt="Image">
-</div>
-<div class="about-us__img">
-<img src="@img/about-us/img09.jpg" alt="Image">
-</div>
-</div>
-<div class="about-us__statistic-block statistic-block">
-<div class="statistic-block__item big-item-statistic-block">
-<h3 class="big-item-statistic-block__title">Naszym celem jest:</h3>
-<div class="big-item-statistic-block__text">Inspirowanie przyszłych specjalistów branży beauty, odkrywanie dla nich ogromnych możliwości profesjonalnego rozwoju
-i kreatywnej realizacji, dzięki unikalnym rozwiązaniom i tajnikom rzemiosła, które jesteśmy gotowi przekazać wszystkim
-chętnym!</div>
-</div>
-<div class="statistic-block__item item-statistic-block">
-<div class="item-statistic-block__num">20 000+</div>
-<div class="item-statistic-block__text">godzin szkolenia</div>
-</div>
-<div class="statistic-block__item item-statistic-block">
-<div class="item-statistic-block__rating">
-<div class="item-statistic-block__icon"><img src="@img/icons/rating-google.svg" alt="Rating google"></div>
-<span>Ocena na Google</span>
-</div>
-<div class="item-statistic-block__num">1 000+</div>
-<div class="item-statistic-block__text">Absolwentek zmieniło swoje życie zawodowe</div>
-</div>
-</div>
-<div class="about-us__certyficat certyficat">
-<div class="certyficat__content">
-<h4 class="certyficat__title">Certyfikat jakości PN-EN ISO 9001:2015-10</h4>
-<div class="certyficat__text">
-<p>Dokładamy wszelkich starań, żeby nasze szkolenia były na najwyższym poziomie. Jako nieliczni posiadamy międzynarodowy,
-akredytowany certyfikat jakości PN-EN ISO 9001:2015-10.</p>
-<p>Oznacza to, że nasza jednostka szkoleniowa spełniła wszystkie wymagania dotyczące jakości prowadzenia szkoleń,
-dokumentacji etc.</p>
-</div>
-<div class="certyficat__subtitle">Certyfikat jest gwarancją wysokiej jakości szkolenia.</div>
-<div class="certyficat__text">
-<p>
-Kursy i szkolenia kosmetyczne, kursy podologiczne, stylizacji paznokci, które prowadzimy wyróżniają nas na rynku szkoleń
-kosmetycznych bardzo wysokim poziomem prowadzonych zajęć, ogromną ilością ćwiczeń (80% czasu stanowi praktyka).
-Umiarkowana cena oraz serdeczna atmosfera sprzyjająca przyswajaniu wiedzy, jak również indywidualne podejście do
-kursantów stanowią o tym, że kursy cieszą się ogromną popularnością.
-</p>
-<p>
-Nasi szkoleniowcy to kadra z bardzo dużym doświadczeniem instruktorskim oraz wieloletnim doświadczeniem zawodowym
-posiadająca wykształcenie kierunkowe, wyselekcjonowana z pośród wielu kandydatów starających się o pracę u nas.
-</p>
-<p>
-W związku z tym zapewniamy Państwa, że kursy oraz szkolenia proponowane przez Beauty Lider prowadzone są na wysokim
-poziomie, z wielką starannością, żeby nasi kursanci byli w pełni usatysfakcjonowani. Posiadamy profesjonalnie
-przygotowane sale do wykładów oraz ćwiczeń. Zapewniamy materiały dydaktyczne, profesjonalny sprzęt oraz kosmetyki do
-wykonywania zabiegów podologicznych, kosmetycznych oraz stylizacji paznokci.
-</p>
-<p>
-W programach kursów na bieżąco wprowadzamy zmiany podążając za najnowszymi trendami w kosmetologii, podologii,
-stylizacji paznokci, mezoterapii i wielu innych.
-</p>
-</div>
-</div>
-<div class="certyficat__image">
-<img src="@img/about-us/certyficat.png" alt="Image">
-</div>
-</div>
-</div>
-</section>
-<section class="our-range">
-<div class="our-range__box">
-<div class="our-range__container">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="our-range__header-block header-block">
-<div class="header-block__subtitle">
-Ponad 1000 osób ukończyło nasze szkolenia</div>
-<h2 class="header-block__title">Poznaj naszą ofertę szkoleń kosmetycznych:</h2>
-<div class="header-block__text">Zobacz, jak nasze kursantki oceniają szkolenie.</div>
-</div>
-<div class="our-range__body">
-<div class="our-range__column">
-<div class="our-range__name">Kursy stacjonarne</div>
-<ul class="our-range__list">
-<li class="our-range__item">
-<a href="#" class="our-range__link">Stylizacja i laminacja brwi i rzęs <img src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</li>
-<li class="our-range__item">
-<a href="#" class="our-range__link">Przedłużanie rzęs: objętość 2d i 3d <img src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</li>
-<li class="our-range__item">
-<a href="#" class="our-range__link">Depilacja woskiem i pastą cukrową <img src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</li>
-</ul>
-</div>
-<div class="our-range__column">
-<div class="our-range__name">Szkolenia online</div>
-<ul class="our-range__list">
-<li class="our-range__item">
-<a href="#" class="our-range__link">Stylizacja rzęs 3w1 <img src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="instructors">
-<div class="instructors__container">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="instructors__header-block header-block">
-<div class="header-block__subtitle">
-Instruktorzy</div>
-<h2 class="header-block__title">Osoby prowadzące szkolenia</h2>
-<div class="header-block__text">Jesteśmy tym zespołem profesjonalistów, którzy pomogą Ci w zdobyciu cennej wiedzy. Edukacja jest dla nas nie tylko
-pasją, ale także ciężką pracą, której ostatecznym celem jest zadowalający rezultat.</div>
-</div>
-<div class="instructors__body">
-<div class="instructors__item item-instructors">
-<div class="item-instructors__img">
-<img src="@img/about-us/aleksandra-tsymbaliuk.jpg" alt="Image">
-</div>
-<div class="item-instructors__info">
-<div class="item-instructors__name">Aleksandra Tsymbaliuk</div>
-<div class="item-instructors__profile">Top stylistka brwi</div>
-<ul class="item-instructors__list">
-<li class="item-instructors__item">W branży beauty ponad 7 lat</li>
-<li class="item-instructors__item">Uczestniczka międzynarodowych wystaw Make Up Days i Intercharm</li>
-<li class="item-instructors__item">Uczestniczka i zwyciężczyni międzynarodowych mistrzostw</li>
-<li class="item-instructors__item">Założycielka Educational Beauty Center</li>
-</ul>
-</div>
-</div>
-<div class="instructors__item item-instructors">
-<div class="item-instructors__img">
-<img src="@img/about-us/swietłana-wojtowicz.jpg" alt="Image">
-</div>
-<div class="item-instructors__info">
-<div class="item-instructors__name">Swietłana Wojtowicz</div>
-<div class="item-instructors__profile">Instruktorka masażu</div>
-<ul class="item-instructors__list">
-<li class="item-instructors__item">Posiada ponad 10 lat praktyki oraz uznanie certyfikaty w dziedzinie masażu</li>
-<li class="item-instructors__item">Ekspert w dziedzinie masażu, która poświęciła swoje życie na naukę i doskonalenie tej dziedziny</li>
-<li class="item-instructors__item">Specjalizuje się w tajskim masażu, limfodrenażu, technikach stretchingu oraz różnorodnych metodach przywracania energii</li>
-</ul>
-</div>
-</div>
-<div class="instructors__item item-instructors">
-<div class="item-instructors__img">
-<img src="@img/about-us/oksana-dyvysenko.jpg" alt="Image">
-</div>
-<div class="item-instructors__info">
-<div class="item-instructors__name">Oksana Dyvysenko</div>
-<div class="item-instructors__profile">Top stylistka brwi</div>
-<ul class="item-instructors__list">
-<li class="item-instructors__item">Instruktor z ponad 5-letnim doświadczeniem nauczania w swojej dziedzinie</li>
-<li class="item-instructors__item">Mistrz uniwersalny depilacji męskiej i damskiej</li>
-<li class="item-instructors__item">Osoba, która nieustannie się rozwija, zawsze poszerza swoją wiedzę i doskonali swoje umiejętności i techniki</li>
-<li class="item-instructors__item">Uczestniczka i zdobywczyni nagród w międzynarodowych mistrzostwach w depilacji</li>
-</ul>
-</div>
-</div>
-<div class="instructors__item item-instructors">
-<div class="item-instructors__img">
-<img src="@img/about-us/aleksandra-tsymbaliuk.jpg" alt="Image">
-</div>
-<div class="item-instructors__info">
-<div class="item-instructors__name">Aleksandra Tsymbaliuk</div>
-<div class="item-instructors__profile">Top stylistka brwi</div>
-<ul class="item-instructors__list">
-<li class="item-instructors__item">W branży beauty ponad 7 lat</li>
-<li class="item-instructors__item">Uczestniczka międzynarodowych wystaw Make Up Days i Intercharm</li>
-<li class="item-instructors__item">Uczestniczka i zwyciężczyni międzynarodowych mistrzostw</li>
-<li class="item-instructors__item">Założycielka Educational Beauty Center</li>
-</ul>
-</div>
-</div>
-<div class="instructors__item item-instructors">
-<div class="item-instructors__img">
-<img src="@img/about-us/aleksandra-tsymbaliuk.jpg" alt="Image">
-</div>
-<div class="item-instructors__info">
-<div class="item-instructors__name">Aleksandra Tsymbaliuk</div>
-<div class="item-instructors__profile">Top stylistka brwi</div>
-<ul class="item-instructors__list">
-<li class="item-instructors__item">W branży beauty ponad 7 lat</li>
-<li class="item-instructors__item">Uczestniczka międzynarodowych wystaw Make Up Days i Intercharm</li>
-<li class="item-instructors__item">Uczestniczka i zwyciężczyni międzynarodowych mistrzostw</li>
-<li class="item-instructors__item">Założycielka Educational Beauty Center</li>
-</ul>
-</div>
-</div>
-<div class="instructors__item item-instructors">
-<div class="item-instructors__img">
-<img src="@img/about-us/aleksandra-tsymbaliuk.jpg" alt="Image">
-</div>
-<div class="item-instructors__info">
-<div class="item-instructors__name">Aleksandra Tsymbaliuk</div>
-<div class="item-instructors__profile">Top stylistka brwi</div>
-<ul class="item-instructors__list">
-<li class="item-instructors__item">W branży beauty ponad 7 lat</li>
-<li class="item-instructors__item">Uczestniczka międzynarodowych wystaw Make Up Days i Intercharm</li>
-<li class="item-instructors__item">Uczestniczka i zwyciężczyni międzynarodowych mistrzostw</li>
-<li class="item-instructors__item">Założycielka Educational Beauty Center</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="contacts">
-<div class="contacts__container">
-<div class="contacts__box">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="contacts__header-block header-block">
-<div class="header-block__subtitle">
-Galeria prac
-kursantek</div>
-<h2 class="header-block__title">Gotowa na pierwszy krok w nowy zawód?</h2>
-<div class="header-block__text">Dołącz do kursu i rozpocznij nowy etap swojego życia zawodowego.</div>
-</div>
-<div class="contacts__body">
-<div class="contacts__media">
-<img src="@img/contacts-img.png" alt="Image">
-</div>
-<form data-fls-watcher data-fls-watcher-threshold="0.1" data-fls-watcher-once class="contacts__form form">
-<div class="form__box">
-<label for="name1" class="form__label">Imię *</label>
-<div class="form__line form__line--name">
-<input id="name1" type="text" name="name" placeholder="Twoje imię" class="form__input input">
-</div>
-<span class="form__valid">Pole jest wymagane.</span>
-</div>
-<div class="form__box">
-<label for="phone" class="form__label">Numer telefonu *</label>
-<div class="form__line form__line--phone">
-<input type="hidden" name="tel-send">
-<input id="phone" type="tel" name="tel" placeholder="885-111-222" class="form__input input">
-</div>
-<span class="form__valid">Pole jest wymagane.</span>
-</div>
-<div class="form__box">
-<label class="form__label">Wybierz kurs</label>
-<div class="form__line">
-<select name="form[]" data-fls-select data-fls-select-modif="form">
-<option value="1" selected>Stylizacja i laminacja brwi oraz rzęs 2w1</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-</select>
-</div>
-</div>
-<div class="form__box form__box-textarea">
-<label for="textarea" class="form__label">Wiadomść</label>
-<div class="form__line form__line--textarea">
-<textarea id="textarea" placeholder="Jakie informacje Cię interesują?"
-class="form__textarea"></textarea>
-</div>
-<div class="form__footer">
-<div class="form__valid form__valid--textarea">
-Wprowadź mniej niż 500 znaków.
-</div>
-</div>
-</div>
-<label class="checkbox">
-<input class="checkbox__input" type="checkbox" name="checkbox">
-<div class="checkbox__text">
-<div class="checkbox__body">Niniejszym oświadczam, że zapoznałem się z <a href="#">Polityką
-Przetwarzania Danych Osobowych</a> w celu odpowiedzi na przesłane
-zgłoszenie i wyrażam zgodę na przetwarzanie moich danych w celach marketingowych.</div>
-</div>
-</label>
-<button data-fls-button type="submit" class="form__button button">Zapisz się na kurs <img
-src="@img/icons/arrow.svg" alt="arrow"></button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<section class="reviews">
-<div class="reviews__container">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="reviews__header-block header-block">
-<div class="header-block__subtitle">
-Ponad 100 osób
-ukończyło nasze szkolenia</div>
-<h2 class="header-block__title">Opinie</h2>
-<div class="header-block__text">Zobacz, jak nasze kursantki oceniają szkolenie.</div>
-</div>
-<div data-fls-watcher data-fls-watcher-threshold="0.1" data-fls-watcher-once class="reviews__content">
-<div class="elfsight-app-4ebe13e5-9805-49c4-824c-12deba5dcf2b" data-elfsight-app-lazy></div>
-</div>
-</div>
-</section>
-<section id="faq" class="faq">
-<div class="faq__container">
-<div class="faq__box">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="faq__header-block header-block">
-<div class="header-block__subtitle">
-FAQ
-</div>
-<h2 class="header-block__title">Pytania i odpowiedzi</h2>
-<div class="header-block__text">Masz inne pytanie? Napisz na: <a
-href="mailto:beautycenter.education@gmail.com">beautycenter.education@gmail.com</a></div>
-</div>
-<div data-fls-spollers data-fls-spollers-one class="faq__spollers spollers-faq">
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" data-fls-spollers-open
-class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Mieszkam za granicą, czy mogę kupić kurs jeśli nie mam
-polskiego
-konta?</summary>
-<div class="spollers-faq__body">Tak, możesz skorzystać z dostępnej opcji płatności STRIPE, nawet jeśli
-mieszkasz za granicą.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Nigdy wcześniej nie miałam do czynienia ze stylizacją
-rzęs. Czy ten
-kurs jest dla mnie odpowiedni?</summary>
-<div class="spollers-faq__body">Absolutnie tak. Kurs został zaprojektowany od podstaw z myślą o osobach
-początkujących. Zaczynamy od absolutnych podstaw
-– teorii, higieny i omówienia produktów, a następnie krok po kroku przechodzimy do praktycznych
-ćwiczeń. Dzięki formie
-wideo możesz wracać do każdej lekcji tyle razy, ile potrzebujesz, ucząc się we własnym tempie.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Kiedy otrzymam dostęp do kursu?</summary>
-<div class="spollers-faq__body">Dostęp do kursu otrzymasz natychmiast po jego zakupie.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Jak otrzymam dostęp do kursu?</summary>
-<div class="spollers-faq__body">Po zakupie kursu wystarczy zalogować się na naszą platformę szkoleniową.
-Dane do logowania otrzymasz drogą mailową
-bezpośrednio po zakupie. Będą tam dostępne wszystkie Twoje kursy.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Jak długo mam dostęp do materiałów?</summary>
-<div class="spollers-faq__body">Dostęp 24/7 bez ograniczeń czasowych, na dowolnym urządzeniu.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Jak otrzymam dostęp do kursu?</summary>
-<div class="spollers-faq__body">Po zakupie kursu wystarczy zalogować się na naszą platformę szkoleniową.
-Dane do logowania otrzymasz drogą mailową
-bezpośrednio po zakupie. Będą tam dostępne wszystkie Twoje kursy.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Jak długo mam dostęp do materiałów?</summary>
-<div class="spollers-faq__body">Dostęp 24/7 bez ograniczeń czasowych, na dowolnym urządzeniu.</div>
-</details>
-<details data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3" class="spollers-faq__item">
-<summary class="spollers-faq__title"><span></span> Masz inne pytanie?</summary>
-<div class="spollers-faq__body">Pisz śmiało na <a
-href="mailto:beautycenter.education@gmail.com">beautycenter.education@gmail.com</a>. Chętnie
-pomożemy i udzielimy odpowiedzi na wszystkie Twoje pytania!</div>
-</details>
-</div>
-</div>
-</div>
-</section>
-<section class="publications">
-<div class="publications__container">
-<div data-fls-watcher data-fls-watcher-once data-fls-watcher-threshold="0.3"
-class="publications__header-block header-block">
-<div class="header-block__subtitle">
-Blog</div>
-<h2 class="header-block__title">Blog</h2>
-<div class="header-block__text">Wszystkie kursy są przeznaczone dla początkujących i profesjonalistów
-pragnących podnieść swój poziom zawodowy.</div>
-</div>
-<div class="publications__body">
-<div data-fls-slider class="publications__slider swiper">
-<div class="publications__wrapper swiper-wrapper">
-<div class="publications__slide swiper-slide slide-publications">
-<div class="slide-publications__item item-publications">
-<div class="item-publications__image">
-<img src="@img/publications01.jpg" alt="Image">
-<div class="item-publications__labels">
-<span class="item-publications__label">Брови</span>
-<span class="item-publications__label"><img src="@img/icons/video.svg" alt="icon">
-Відео</span>
-</div>
-</div>
-<div class="item-publications__box-info">
-<div class="item-publications__info">
-<h4 class="item-publications__title">Co nowego? – Pakiety Head i Touch</h4>
-<div class="item-publications__date">12-07-2026<span>4 min</span></div>
-<div class="item-publications__more">
-<a href="#" class="item-publications__link">Więcej informacji <img
-src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="publications__slide swiper-slide slide-publications">
-<div class="slide-publications__item item-publications">
-<div class="item-publications__image">
-<img src="@img/publications01.jpg" alt="Image">
-<div class="item-publications__labels">
-<span class="item-publications__label">Брови</span>
-<span class="item-publications__label"><img src="@img/icons/video.svg" alt="icon">
-Відео</span>
-</div>
-</div>
-<div class="item-publications__box-info">
-<div class="item-publications__info">
-<h4 class="item-publications__title">Nowa cena! Kurs BioRePeel + mezoterapia mikroigłowa</h4>
-<div class="item-publications__date">12-07-2026<span>4 min</span></div>
-<div class="item-publications__more">
-<a href="#" class="item-publications__link">Więcej informacji <img
-src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="publications__slide swiper-slide slide-publications">
-<div class="slide-publications__item item-publications">
-<div class="item-publications__image">
-<img src="@img/publications01.jpg" alt="Image">
-<div class="item-publications__labels">
-<span class="item-publications__label">Брови</span>
-<span class="item-publications__label"><img src="@img/icons/video.svg" alt="icon">
-Відео</span>
-</div>
-</div>
-<div class="item-publications__box-info">
-<div class="item-publications__info">
-<h4 class="item-publications__title">Co nowego? – Pakiety Head i Touch</h4>
-<div class="item-publications__date">12-07-2026<span>4 min</span></div>
-<div class="item-publications__more">
-<a href="#" class="item-publications__link">Więcej informacji <img
-src="@img/icons/arrow-primary.svg" alt="arrow"></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="publications__nav">
-<button type="button" class="swiper-button-prev publications__btn publications-prev"><img
-src="@img/icons/arrow-slider.svg" alt="arrow"></button>
-<div class="swiper-pagination publications-pagination"></div>
-<button type="button" class="swiper-button-next publications__btn publications-next"><img
-src="@img/icons/arrow-slider.svg" alt="arrow"></button>
-</div>
-</div>
-<div class="publications__btn-box"><a href="#" data-fls-button class="publications__button button">Więcej
-aktualności <img src="@img/icons/arrow.svg" alt="arrow"></a></div>
-</div>
-</div>
-</section>
-</div>
--->
 			</main>
 			<footer id="footer" data-fls-footer="" class="footer">
 				<div class="footer__container">

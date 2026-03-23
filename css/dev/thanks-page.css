@@ -69,6 +69,9 @@
   }
 }
 @media (max-width: 47.99875em) {
+  .thanks-page__container::before {
+    top: -11%;
+  }
   .thanks-page__container {
     padding-left: 1.25rem;
     padding-right: 1.25rem;

@@ -7,17 +7,18 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774193904466" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774278624072" async></script>
 		<title>Article Blog</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774193904466">
-		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774193904466"></script>
-		<script type="module" crossorigin="" src="./js/slider.min.js?v=1774193904466"></script>
-		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774193904466"></script>
-		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774193904466"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774193904466">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774193904466">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774193904466">
-		<link rel="stylesheet" crossorigin="" href="./css/article-blog.min.css?v=1774193904466">
+		<script type="module" crossorigin="" src="./js/article-blog.min.js?v=1774278624072"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774278624072">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774278624072">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774278624072">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774278624072">
+		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774278624072">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774278624072">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774278624072">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774278624072">
+		<link rel="stylesheet" crossorigin="" href="./css/article-blog.min.css?v=1774278624072">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -193,6 +194,11 @@
 						<!-- <a href="#contacts" data-fls-button class="header__button button">Kupuję kurs</a> -->
 						<div data-fls-dynamic=".menu__list, 1300" class="header__line">
 							<select name="lang" class="header__lang" data-fls-select="">
+								<!--
+<option value="1" selected>PL polski</option>
+<option value="2">UA українська</option>
+<option value="3">RU русский</option>
+-->
 								<option value="1" selected>PL</option>
 								<option value="2">UA</option>
 								<option value="3">RU</option>
@@ -206,6 +212,9 @@
 				</div>
 			</header>
 			<main class="page">
+				<div class="btn-up">
+					<img src="./assets/img/icons/arrow.svg" alt="Image">
+				</div>
 				<div class="page__article-blog">
 					<section class="article-blog">
 						<div class="article-blog__container">

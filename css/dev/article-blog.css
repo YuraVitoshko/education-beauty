@@ -86,7 +86,7 @@
   background-color: #CED2D6;
 }
 .article-blog__nav {
-  margin-bottom: 2rem;
+  margin-bottom: 3.75rem;
 }
 .article-blog__content {
   counter-reset: title;
@@ -117,6 +117,9 @@
   counter-increment: item;
   display: flex;
   column-gap: 0.375rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: underline;
 }
 .nav-article-blog__item::before {
   content: counter(item) ". ";
@@ -165,5 +168,10 @@
 @media (max-width: 29.99875em) {
   .article-blog__image {
     aspect-ratio: 350/360;
+  }
+}
+@media (any-hover: hover) {
+  .nav-article-blog__item:hover {
+    color: #E35336;
   }
 }

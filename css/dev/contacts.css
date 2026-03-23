@@ -3,14 +3,6 @@
   padding-top: 8.5rem;
   padding-bottom: 3.75rem;
 }
-.contacts-page__header-block {
-  max-width: 55rem !important;
-  margin: 0 auto;
-}
-.contacts-page__header-block > * {
-  justify-self: center;
-  text-align: center;
-}
 .contacts-page__header-block:not(:last-child) {
   margin-bottom: 3.75rem;
 }
@@ -20,7 +12,7 @@
   gap: 3.75rem;
 }
 .contacts-page__body:not(:last-child) {
-  margin-bottom: 10rem;
+  margin-bottom: 7.5rem;
 }
 .contacts-page__form {
   padding: 3.75rem;
@@ -120,6 +112,9 @@
   .contacts-page__container {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  .contacts-page__body:not(:last-child) {
+    margin-bottom: 6.25rem;
   }
   .contacts-page__form {
     padding-left: 1.25rem;
