@@ -433,14 +433,6 @@
   row-gap: 3.75rem;
 }
 .what-does-the-course__header-block {
-  margin: 0 auto;
-  max-width: 55rem !important;
-}
-.what-does-the-course__header-block > * {
-  justify-self: center;
-  text-align: center;
-}
-.what-does-the-course__header-block {
   opacity: 0;
   transform: translateY(10%);
   transition: opacity 0.7s, transform 0.7s;
