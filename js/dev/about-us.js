@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		<div class="gallery-viewer__overlay"></div>
 
 		<button class="gallery-viewer__close">
-			<img src="/assets/img/icons/close.svg" alt="Close">
+			<img src="./assets/img/icons/close.svg" alt="Close">
 		</button>
 
 		<div class="gallery-viewer__content">
 			<img class="gallery-viewer__image" src="">
 			<div class="gallery-viewer__controls">
-				<button class="gallery-viewer__prev"><img src="/assets/img/icons/arrow-slider.svg" alt=""></button>
+				<button class="gallery-viewer__prev"><img src="./assets/img/icons/arrow-slider.svg" alt=""></button>
 				<div class="gallery-viewer__dots"></div>
-				<button class="gallery-viewer__next"><img src="/assets/img/icons/arrow-slider.svg" alt=""></button>
+				<button class="gallery-viewer__next"><img src="./assets/img/icons/arrow-slider.svg" alt=""></button>
 			</div>
 		</div>
 	`;
