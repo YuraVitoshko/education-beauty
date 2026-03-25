@@ -75,21 +75,6 @@
 }
 .programs-course__card {
   will-change: transform, opacity;
-  opacity: 0;
-  transform: translateY(1.25rem);
-}
-.programs-course__card.--watcher-view {
-  opacity: 1;
-  transform: translateY(0);
-}
-.programs-course__card:nth-child(3n+1) {
-  transition: opacity 0.7s, transform 0.7s;
-}
-.programs-course__card:nth-child(3n+2) {
-  transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
-}
-.programs-course__card:nth-child(3n+3) {
-  transition: opacity 0.7s 0.6s, transform 0.7s 0.6s;
 }
 @media (max-width: 75em) {
   .programs-course__cards {
@@ -100,12 +85,6 @@
   .programs-course__cards {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
-  }
-  .programs-course__card:nth-child(odd) {
-    transition: opacity 0.7s 0s, transform 0.7s 0s;
-  }
-  .programs-course__card:nth-child(even) {
-    transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
   }
 }
 @media (max-width: 47.99875em) {
@@ -120,9 +99,6 @@
     padding-top: 2rem;
     column-gap: 1.25rem;
     grid-template-columns: auto;
-  }
-  .programs-course__card {
-    transition: opacity 0.7s 0s, transform 0.7s 0s !important;
   }
 }
 @media (any-hover: hover) {

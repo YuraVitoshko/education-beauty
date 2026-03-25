@@ -967,44 +967,6 @@ function preloader() {
   }
 }
 document.addEventListener("DOMContentLoaded", preloader);
-document.addEventListener("DOMContentLoaded", () => {
-  const btnUp = document.querySelector(".btn-up");
-  const footer = document.querySelector(".footer");
-  if (!btnUp) return;
-  function setActive(show) {
-    if (show) btnUp.classList.add("active");
-    else btnUp.classList.remove("active");
-  }
-  function handleDesktop() {
-    if (window.scrollY > 300) setActive(true);
-    else setActive(false);
-  }
-  function handleMobile() {
-    if (!footer) return;
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        setActive(entry.isIntersecting);
-      });
-    }, { threshold: 0.1 });
-    observer.observe(footer);
-  }
-  function init() {
-    if (window.innerWidth >= 768) {
-      window.addEventListener("scroll", handleDesktop);
-      handleDesktop();
-    } else {
-      handleMobile();
-    }
-  }
-  init();
-  window.addEventListener("resize", () => {
-    btnUp.classList.remove("active");
-    init();
-  });
-  btnUp.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-});
 function getDefaultExportFromCjs(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
 }
