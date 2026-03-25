@@ -587,16 +587,28 @@ function menuInit() {
   });
 }
 document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
-function waitForElements(selector, callback) {
-  const elements = document.querySelectorAll(selector);
-  if (elements.length) {
-    callback(elements);
-  } else {
-    requestAnimationFrame(() => waitForElements(selector, callback));
-  }
-}
-waitForElements(".menu__item", (items) => {
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+  if (!header) return;
+  let lastScroll = 0;
+  let scrollTimer;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      header.classList.add("--hidden");
+    } else {
+      header.classList.remove("--hidden");
+    }
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      header.classList.remove("--hidden");
+    }, 500);
+    lastScroll = currentScroll;
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   const BREAKPOINT = 1300;
+  const items = document.querySelectorAll(".menu__item");
   const isMobile = () => window.innerWidth <= BREAKPOINT;
   items.forEach((item) => {
     const external = item.querySelector(".menu__external");
@@ -651,25 +663,6 @@ waitForElements(".menu__item", (items) => {
       document.documentElement.removeAttribute("data-fls-scrolllock");
       document.documentElement.removeAttribute("data-fls-menu-open");
     });
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".header");
-  if (!header) return;
-  let lastScroll = 0;
-  let scrollTimer;
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > lastScroll && currentScroll > 100) {
-      header.classList.add("--hidden");
-    } else {
-      header.classList.remove("--hidden");
-    }
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      header.classList.remove("--hidden");
-    }, 500);
-    lastScroll = currentScroll;
   });
 });
 class DynamicAdapt {

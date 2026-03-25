@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded",()=>{const n=document.querySelector
 		<div class="gallery-viewer__overlay"></div>
 
 		<button class="gallery-viewer__close">
-			<img src="./assets/img/icons/close.svg" alt="Close">
+			<img src="/assets/img/icons/close.svg" alt="Close">
 		</button>
 
 		<div class="gallery-viewer__content">
 			<img class="gallery-viewer__image" src="">
 			<div class="gallery-viewer__controls">
-				<button class="gallery-viewer__prev"><img src="./assets/img/icons/arrow-slider.svg" alt="Image"></button>
+				<button class="gallery-viewer__prev"><img src="/assets/img/icons/arrow-slider.svg" alt="Image"></button>
 				<div class="gallery-viewer__dots"></div>
-				<button class="gallery-viewer__next"><img src="./assets/img/icons/arrow-slider.svg" alt="Image"></button>
+				<button class="gallery-viewer__next"><img src="/assets/img/icons/arrow-slider.svg" alt="Image"></button>
 			</div>
 		</div>
 	`,document.body.append(l);const d=l.querySelector(".gallery-viewer__image"),u=l.querySelector(".gallery-viewer__prev"),c=l.querySelector(".gallery-viewer__next"),_=l.querySelector(".gallery-viewer__overlay"),p=l.querySelector(".gallery-viewer__close"),v=l.querySelector(".gallery-viewer__dots");l.style.display="none",i.forEach((s,o)=>{const t=document.createElement("span");t.className="gallery-dot",t.addEventListener("click",()=>{e=o,m()}),v.append(t)});const r=v.querySelectorAll(".gallery-dot");function m(){d.src=i[e];const s=r.length;let o=0,t=s;s>y&&(o=e-2,t=e+3,o<0&&(o=0,t=y),t>s&&(t=s,o=s-y)),r.forEach((g,L)=>{g.classList.remove("active"),L>=o&&L<t?g.style.display="block":g.style.display="none"}),r[e].classList.add("active"),u.classList.toggle("disabled",e===0),c.classList.toggle("disabled",e===i.length-1)}function E(s){e=s,m(),l.style.display="block",l.classList.add("active"),document.body.style.overflow="hidden"}function a(){l.classList.remove("active"),l.style.display="none",document.body.style.overflow=""}n.forEach((s,o)=>{s.addEventListener("click",()=>E(o))}),c.addEventListener("click",()=>{e>=i.length-1||(e++,m())}),u.addEventListener("click",()=>{e<=0||(e--,m())}),_.addEventListener("click",a),p.addEventListener("click",a);let f=0;d.addEventListener("touchstart",s=>{f=s.touches[0].clientX}),d.addEventListener("touchend",s=>{const o=s.changedTouches[0].clientX;f-o>50&&e<i.length-1&&c.click(),o-f>50&&e>0&&u.click()})});
