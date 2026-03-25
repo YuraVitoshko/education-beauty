@@ -3,6 +3,15 @@
   padding-top: 8.5rem;
   padding-bottom: 3.75rem;
 }
+.programs-course__header-block {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 0.5s, transform 0.7s 0.5s;
+}
+.programs-course__header-block.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 .programs-course__header-block:not(:last-child) {
   margin-bottom: 3.75rem;
 }
@@ -12,6 +21,13 @@
   flex-wrap: wrap;
   row-gap: 0.625rem;
   column-gap: 0.75rem;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 0.8s, transform 0.7s 0.8s;
+}
+.programs-course__controls.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .programs-course__control {
   padding: 0.75rem 1.125rem;
@@ -27,8 +43,8 @@
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 .programs-course__control img {
-  flex: 0 0 0.875rem;
-  width: 0.875rem;
+  flex: 0 0 1.25rem;
+  width: 1.25rem;
   object-fit: contain;
 }
 .programs-course__control.active {
@@ -49,9 +65,31 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.75rem;
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.7s 1.1s, transform 0.7s 1.1s;
+}
+.programs-course__cards.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .programs-course__card {
   will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+.programs-course__card.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.programs-course__card:nth-child(3n+1) {
+  transition: opacity 0.7s, transform 0.7s;
+}
+.programs-course__card:nth-child(3n+2) {
+  transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
+}
+.programs-course__card:nth-child(3n+3) {
+  transition: opacity 0.7s 0.6s, transform 0.7s 0.6s;
 }
 @media (max-width: 75em) {
   .programs-course__cards {
@@ -62,6 +100,12 @@
   .programs-course__cards {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
+  }
+  .programs-course__card:nth-child(odd) {
+    transition: opacity 0.7s 0s, transform 0.7s 0s;
+  }
+  .programs-course__card:nth-child(even) {
+    transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
   }
 }
 @media (max-width: 47.99875em) {
@@ -76,6 +120,9 @@
     padding-top: 2rem;
     column-gap: 1.25rem;
     grid-template-columns: auto;
+  }
+  .programs-course__card {
+    transition: opacity 0.7s 0s, transform 0.7s 0s !important;
   }
 }
 @media (any-hover: hover) {

@@ -34,11 +34,25 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: #454C52;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 0.5s, transform 0.7s 0.5s;
+}
+.page404__info.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .page404__button {
   position: relative;
   z-index: 2;
   white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 0.8s, transform 0.7s 0.8s;
+}
+.page404__button.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (max-width: 90em) {
   .page404__container::before {

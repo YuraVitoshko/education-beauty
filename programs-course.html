@@ -16,18 +16,17 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774280139417" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774445017369" async></script>
 		<title>Programs Course</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774280139417">
-		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774280139417"></script>
-		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774280139417"></script>
-		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774280139417"></script>
-		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774280139417"></script>
-		<script type="module" crossorigin="" src="./js/programs-course.min2.js?v=1774280139417"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774280139417">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774280139417">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774280139417">
-		<link rel="stylesheet" crossorigin="" href="./css/programs-course.min.css?v=1774280139417">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774445017369">
+		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774445017369"></script>
+		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774445017369"></script>
+		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774445017369"></script>
+		<script type="module" crossorigin="" src="./js/programs-course.min2.js?v=1774445017369"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774445017369">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774445017369">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774445017369">
+		<link rel="stylesheet" crossorigin="" href="./css/programs-course.min.css?v=1774445017369">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -122,14 +121,14 @@
 															</ul>
 														</div>
 													</li>
-													<li class="sub-menu__item">
+													<li class="sub-menu__item sub-menu__item--bt">
 														<a href="#" class="sub-menu__link">
 															<span>Szkolenia online</span>
 															<svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M0.75 0.75L7 7L0.749999 13.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg>
 														</a>
-														<div class="sub-menu__content">
+														<div class="sub-menu__content sub-menu__content--pos">
 															<ul>
 																<li>
 																	<a href="#">Masaż kurs</a>
@@ -224,6 +223,8 @@
 				<div class="btn-up">
 					<img src="./assets/img/icons/arrow.svg" alt="Image">
 				</div>
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774445017369"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774445017369">
 				<div class="page__programs-course">
 					<section class="programs-course">
 						<div class="programs-course__box">
@@ -237,7 +238,7 @@
 								</div>
 								<div class="programs-course__categories">
 									<div class="programs-course__category">
-										<div class="programs-course__controls">
+										<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="programs-course__controls">
 											<button type="button" class="programs-course__control active" data-filter="all">Wszystkie</button>
 											<button type="button" class="programs-course__control" data-filter=".eyebrow">Stylizacja brwi</button>
 											<button type="button" class="programs-course__control" data-filter=".eyelash">Stylizacja rzęs</button>
@@ -248,11 +249,13 @@
 												Online
 											</button>
 										</div>
-										<div class="programs-course__cards">
-											<div class="programs-course__card card-category-course eyebrow">
+										<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.01" class="programs-course__cards">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course eyebrow">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
-													<span class="card-category-course__label">Bestseller</span>
+													<div class="card-category-course__box-label">
+														<span class="card-category-course__label">Bestseller</span>
+													</div>
 												</div>
 												<div class="card-category-course__content">
 													<div class="card-category-course__tags">
@@ -267,11 +270,13 @@
 														</li>
 														<li class="card-category-course__item">
 															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
-															4 prace pokazowe instruktorki
+															4 prace pokazowe
+											instruktorki
 														</li>
 														<li class="card-category-course__item">
 															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
-															5 praktycznych ćwiczeń na modelkach
+															5 praktycznych
+											ćwiczeń na modelkach
 														</li>
 													</ul>
 												</div>
@@ -282,39 +287,7 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course eyelash">
-												<div class="card-category-course__img">
-													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
-												</div>
-												<div class="card-category-course__content">
-													<div class="card-category-course__tags">
-														<span class="card-category-course__tag tag">Dla początkujących</span>
-														<span class="card-category-course__tag tag">2-dniowy</span>
-													</div>
-													<div class="card-category-course__name">Stylizacja + laminacja brwi i rzęs 2w1</div>
-													<ul class="card-category-course__list">
-														<li class="card-category-course__item">
-															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
-															Kameralne grupy
-														</li>
-														<li class="card-category-course__item">
-															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
-															4 prace pokazowe instruktorki
-														</li>
-														<li class="card-category-course__item">
-															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
-															5 praktycznych ćwiczeń na modelkach
-														</li>
-													</ul>
-												</div>
-												<div class="card-category-course__btn">
-													<a href="#" data-fls-button="" class="card-category-course__button button">
-														Więcej
-														<img src="./assets/img/icons/arrow.svg" alt="arrow">
-													</a>
-												</div>
-											</div>
-											<div class="programs-course__card card-category-course eyelash">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course eyelash">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -346,7 +319,7 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course epilation">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course eyelash">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -378,7 +351,7 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course massage">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course epilation">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -410,7 +383,7 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course eyelash">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course massage">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -442,7 +415,7 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course massage">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course eyelash">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -474,7 +447,7 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course online">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course massage">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -506,7 +479,39 @@
 													</a>
 												</div>
 											</div>
-											<div class="programs-course__card card-category-course epilation">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course online">
+												<div class="card-category-course__img">
+													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
+												</div>
+												<div class="card-category-course__content">
+													<div class="card-category-course__tags">
+														<span class="card-category-course__tag tag">Dla początkujących</span>
+														<span class="card-category-course__tag tag">2-dniowy</span>
+													</div>
+													<div class="card-category-course__name">Stylizacja + laminacja brwi i rzęs 2w1</div>
+													<ul class="card-category-course__list">
+														<li class="card-category-course__item">
+															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
+															Kameralne grupy
+														</li>
+														<li class="card-category-course__item">
+															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
+															4 prace pokazowe instruktorki
+														</li>
+														<li class="card-category-course__item">
+															<img src="./assets/img/icons/small-green-check.svg" alt="icon">
+															5 praktycznych ćwiczeń na modelkach
+														</li>
+													</ul>
+												</div>
+												<div class="card-category-course__btn">
+													<a href="#" data-fls-button="" class="card-category-course__button button">
+														Więcej
+														<img src="./assets/img/icons/arrow.svg" alt="arrow">
+													</a>
+												</div>
+											</div>
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course epilation">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
 												</div>
@@ -556,7 +561,7 @@
 							</div>
 							<div class="deadlines__body">
 								<div class="deadlines__items">
-									<div class="deadlines__item item-deadlines">
+									<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__item item-deadlines">
 										<div class="item-deadlines__top">
 											<div class="item-deadlines__img">
 												<picture>
@@ -583,7 +588,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="deadlines__item item-deadlines">
+									<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__item item-deadlines">
 										<div class="item-deadlines__top">
 											<div class="item-deadlines__img">
 												<picture>
@@ -610,7 +615,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="deadlines__item item-deadlines">
+									<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__item item-deadlines">
 										<div class="item-deadlines__top">
 											<div class="item-deadlines__img">
 												<picture>
@@ -637,7 +642,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="deadlines__item item-deadlines">
+									<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__item item-deadlines">
 										<div class="item-deadlines__top">
 											<div class="item-deadlines__img">
 												<picture>
@@ -665,14 +670,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="deadlines__btn">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.5" class="deadlines__btn">
 									<a href="#" data-fls-button="" class="deadlines__button button">
 										Zapisz się na kurs
 										<img src="./assets/img/icons/arrow.svg" alt="arrow">
 									</a>
 								</div>
 							</div>
-							<div class="deadlines__question-block question-block">
+							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="deadlines__question-block question-block">
 								<h3 class="question-block__title">Nie pasuje termin? Napisz do nas — znajdziemy inne rozwiązanie.</h3>
 								<div class="question-block__btn">
 									<a href="#" data-fls-button="" class="question-block__button button">
@@ -694,7 +699,7 @@
 						zawodowego.</div>
 								</div>
 								<div class="contacts__body">
-									<div class="contacts__media">
+									<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="contacts__media">
 										<picture>
 											<img alt="Image" src="./assets/img/contacts-img.webp">
 										</picture>
@@ -781,13 +786,13 @@
 					<section id="faq" class="faq faq--pb">
 						<div class="faq__container">
 							<div class="faq__box">
-								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block">
-									<div class="header-block__subtitle">
+								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="faq__header-block header-block header-block--mw header-block--ma">
+									<div class="header-block__subtitle header-block__subtitle--center">
 										<!-- <img src="@img/icons/rectangle-blue.svg" alt="icon"> -->
 										FAQ
 									</div>
-									<h2 class="header-block__title">Pytania i odpowiedzi</h2>
-									<div class="header-block__text">
+									<h2 class="header-block__title header-block__title--center">Pytania i odpowiedzi</h2>
+									<div class="header-block__text header-block__text--center">
 										Masz inne pytanie? Napisz na:
 										<a href="mailto:beautycenter.education@gmail.com">beautycenter.education@gmail.com</a>
 									</div>

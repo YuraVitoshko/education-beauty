@@ -16,19 +16,18 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774280139422" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774445017366" async></script>
 		<title>Online Learning</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774280139422">
-		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774280139422"></script>
-		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774280139422"></script>
-		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774280139422"></script>
-		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774280139422"></script>
-		<script type="module" crossorigin="" src="./js/programs-course.min2.js?v=1774280139422"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774280139422">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774280139422">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774280139422">
-		<link rel="stylesheet" crossorigin="" href="./css/programs-course.min.css?v=1774280139422">
-		<link rel="stylesheet" crossorigin="" href="./css/online-learning.min.css?v=1774280139422">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774445017366">
+		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774445017366"></script>
+		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774445017366"></script>
+		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774445017366"></script>
+		<script type="module" crossorigin="" src="./js/programs-course.min2.js?v=1774445017366"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774445017366">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774445017366">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774445017366">
+		<link rel="stylesheet" crossorigin="" href="./css/programs-course.min.css?v=1774445017366">
+		<link rel="stylesheet" crossorigin="" href="./css/online-learning.min.css?v=1774445017366">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -123,14 +122,14 @@
 															</ul>
 														</div>
 													</li>
-													<li class="sub-menu__item">
+													<li class="sub-menu__item sub-menu__item--bt">
 														<a href="#" class="sub-menu__link">
 															<span>Szkolenia online</span>
 															<svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M0.75 0.75L7 7L0.749999 13.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg>
 														</a>
-														<div class="sub-menu__content">
+														<div class="sub-menu__content sub-menu__content--pos">
 															<ul>
 																<li>
 																	<a href="#">Masaż kurs</a>
@@ -225,8 +224,10 @@
 				<div class="btn-up">
 					<img src="./assets/img/icons/arrow.svg" alt="Image">
 				</div>
-				<div class="page__programs-course">
-					<section class="programs-course">
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774445017366"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774445017366">
+				<div class="page__online-learning online-learning">
+					<section class="online-learning__programs-course programs-course">
 						<div class="programs-course__box">
 							<div class="programs-course__container">
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="programs-course__header-block header-block header-block--mw">
@@ -241,7 +242,7 @@
 								</div>
 								<div class="programs-course__categories">
 									<div class="programs-course__category">
-										<div class="programs-course__controls">
+										<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="programs-course__controls">
 											<button type="button" class="programs-course__control active" data-filter="all">Wszystkie</button>
 											<button type="button" class="programs-course__control disabled" data-filter=".eyebrow">Stylizacja brwi</button>
 											<button type="button" class="programs-course__control" data-filter=".eyelash">Stylizacja rzęs</button>
@@ -249,11 +250,13 @@
 											<button type="button" class="programs-course__control disabled" data-filter=".massage">Masaż</button>
 											<!-- <button type="button" class="programs-course__control" data-filter=".online">Online</button> -->
 										</div>
-										<div class="programs-course__cards">
-											<div class="programs-course__card card-category-course eyelash online">
+										<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__cards">
+											<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="programs-course__card card-category-course eyelash online">
 												<div class="card-category-course__img">
 													<img src="./assets/img/about-us/img07.jpg/01.jpg" alt="Image">
-													<span class="card-category-course__label">Bestseller</span>
+													<div class="card-category-course__box-label">
+														<span class="card-category-course__label">Bestseller</span>
+													</div>
 												</div>
 												<div class="card-category-course__content">
 													<div class="card-category-course__tags">
@@ -315,7 +318,7 @@
 						zawodowego.</div>
 								</div>
 								<div class="contacts__body">
-									<div class="contacts__media">
+									<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.1" class="contacts__media">
 										<picture>
 											<img alt="Image" src="./assets/img/contacts-img.webp">
 										</picture>

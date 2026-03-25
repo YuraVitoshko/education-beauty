@@ -40,6 +40,15 @@
   height: 100%;
   object-fit: contain;
 }
+.thanks-page__icon {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 0.5s, transform 0.7s 0.5s;
+}
+.thanks-page__icon.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 .thanks-page__title {
   justify-self: center;
   text-align: center;
@@ -48,6 +57,13 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #24292E;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 0.8s, transform 0.7s 0.8s;
+}
+.thanks-page__title.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .thanks-page__text {
   justify-self: center;
@@ -56,11 +72,25 @@
   line-height: 1.5;
   text-align: center;
   color: #454C52;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 1.1s, transform 0.7s 1.1s;
+}
+.thanks-page__text.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .thanks-page__button {
   position: relative;
   z-index: 2;
   white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.7s 1.4s, transform 0.7s 1.4s;
+}
+.thanks-page__button.--watcher-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (max-width: 90em) {
   .thanks-page__container::before {
@@ -70,7 +100,8 @@
 }
 @media (max-width: 47.99875em) {
   .thanks-page__container::before {
-    top: -11%;
+    top: -15%;
+    transform: scale(2.8);
   }
   .thanks-page__container {
     padding-left: 1.25rem;

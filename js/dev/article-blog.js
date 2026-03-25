@@ -1,6 +1,5 @@
 import "./common.min2.js";
 import "./slider.min.js";
-import "./watcher.min.js";
 import "./index.min2.js";
 import "./common.min.js";
 document.addEventListener("DOMContentLoaded", () => {
