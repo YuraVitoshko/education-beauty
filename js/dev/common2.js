@@ -606,9 +606,16 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScroll = currentScroll;
   });
 });
-document.addEventListener("DOMContentLoaded", () => {
+function waitForElements(selector, callback) {
+  const elements = document.querySelectorAll(selector);
+  if (elements.length) {
+    callback(elements);
+  } else {
+    requestAnimationFrame(() => waitForElements(selector, callback));
+  }
+}
+waitForElements(".menu__item", (items) => {
   const BREAKPOINT = 1300;
-  const items = document.querySelectorAll(".menu__item");
   const isMobile = () => window.innerWidth <= BREAKPOINT;
   items.forEach((item) => {
     const external = item.querySelector(".menu__external");
