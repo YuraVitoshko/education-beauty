@@ -606,18 +606,12 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScroll = currentScroll;
   });
 });
-function waitForElements(selector, callback) {
-  const elements = document.querySelectorAll(selector);
-  if (elements.length) {
-    callback(elements);
-  } else {
-    requestAnimationFrame(() => waitForElements(selector, callback));
-  }
-}
-waitForElements(".menu__item", (items) => {
+function initMenu(items) {
   const BREAKPOINT = 1300;
   const isMobile = () => window.innerWidth <= BREAKPOINT;
   items.forEach((item) => {
+    if (item.dataset.menuInited) return;
+    item.dataset.menuInited = "true";
     const external = item.querySelector(".menu__external");
     if (!external) return;
     item.addEventListener("click", (e) => {
@@ -658,9 +652,7 @@ waitForElements(".menu__item", (items) => {
   }
   window.addEventListener("resize", () => {
     if (!isMobile()) {
-      document.querySelectorAll(".menu__external").forEach((el) => {
-        el.removeAttribute("style");
-      });
+      document.querySelectorAll(".menu__external").forEach((el) => el.removeAttribute("style"));
       items.forEach((item) => item.classList.remove("active"));
     }
   });
@@ -671,7 +663,16 @@ waitForElements(".menu__item", (items) => {
       document.documentElement.removeAttribute("data-fls-menu-open");
     });
   });
+}
+const observer = new MutationObserver(() => {
+  const items = document.querySelectorAll(".menu__item");
+  if (items.length) {
+    initMenu(items);
+  }
 });
+observer.observe(document.body, { childList: true, subtree: true });
+const initialItems = document.querySelectorAll(".menu__item");
+if (initialItems.length) initMenu(initialItems);
 class DynamicAdapt {
   constructor() {
     this.type = "max";
@@ -873,9 +874,9 @@ class ScrollWatcher {
   }
   // Функція створення нового спостерігача зі своїми налаштуваннями
   scrollWatcherCreate(configWatcher) {
-    this.observer = new IntersectionObserver((entries, observer) => {
+    this.observer = new IntersectionObserver((entries, observer2) => {
       entries.forEach((entry) => {
-        this.scrollWatcherCallback(entry, observer);
+        this.scrollWatcherCallback(entry, observer2);
       });
     }, configWatcher);
   }
@@ -893,14 +894,14 @@ class ScrollWatcher {
     }
   }
   // Функція відключення стеження за об'єктом
-  scrollWatcherOff(targetElement, observer) {
-    observer.unobserve(targetElement);
+  scrollWatcherOff(targetElement, observer2) {
+    observer2.unobserve(targetElement);
   }
   // Функція обробки спостереження
-  scrollWatcherCallback(entry, observer) {
+  scrollWatcherCallback(entry, observer2) {
     const targetElement = entry.target;
     this.scrollWatcherIntersecting(entry, targetElement);
-    targetElement.hasAttribute("data-fls-watcher-once") && entry.isIntersecting ? this.scrollWatcherOff(targetElement, observer) : null;
+    targetElement.hasAttribute("data-fls-watcher-once") && entry.isIntersecting ? this.scrollWatcherOff(targetElement, observer2) : null;
     document.dispatchEvent(new CustomEvent("watcherCallback", {
       detail: {
         entry
