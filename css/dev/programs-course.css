@@ -101,7 +101,7 @@
     grid-template-columns: auto;
   }
 }
-@media (any-hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .programs-course__control:hover {
     color: #E35336;
     border-color: #E35336;
