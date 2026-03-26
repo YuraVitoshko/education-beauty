@@ -179,11 +179,10 @@
   transition: color 0.3s;
   text-decoration: underline;
 }
-.our-range__link img {
-  transform: translateY(0.125rem);
-  flex: 0 0 0.3125rem;
-  width: 0.3125rem;
-  height: 0.5rem;
+.our-range__link svg {
+  flex: 0 0 0.4375rem;
+  width: 0.4375rem;
+  height: 0.75rem;
 }
 
 .instructors {
@@ -350,8 +349,8 @@
     pointer-events: visible;
   }
   .about-us__statistic-block {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   .certyficat {
     padding-left: 1.25rem;

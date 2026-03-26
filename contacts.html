@@ -16,16 +16,17 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774468129179" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774533053069" async></script>
 		<title>Contacts</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774468129179">
-		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774468129179"></script>
-		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774468129179"></script>
-		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774468129179"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774468129179">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774468129179">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774468129179">
-		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1774468129179">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774533053069">
+		<script type="module" crossorigin="" src="./js/common.min2.js?v=1774533053069"></script>
+		<script type="module" crossorigin="" src="./js/tel-form.min.js?v=1774533053069"></script>
+		<script type="module" crossorigin="" src="./js/watcher.min.js?v=1774533053069"></script>
+		<script type="module" crossorigin="" src="./js/index.min2.js?v=1774533053069"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774533053069">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774533053069">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774533053069">
+		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1774533053069">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -221,9 +222,12 @@
 					</div>
 				</div>
 			</header>
+			<div class="btn-up">
+				<img src="./assets/img/icons/arrow.svg" alt="Image">
+			</div>
 			<main class="page">
-				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774468129179"></script>
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774468129179">
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774533053069"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774533053069">
 				<div class="page__contacts-page">
 					<section class="contacts-page">
 						<div class="contacts-page__container">
@@ -301,23 +305,23 @@
 										<span class="form__valid">Pole jest wymagane.</span>
 									</div>
 									<!--
-<div class="form__box">
-<label class="form__label">Wybierz kurs</label>
-<div class="form__line">
-<select name="form[]" data-fls-select data-fls-select-modif="form">
-<option value="1" selected>Stylizacja i laminacja brwi oraz rzęs 2w1</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-<option value="3">Stylizacja i laminacja brwi</option>
-<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
-</select>
-</div>
-</div>
--->
+										<div class="form__box">
+										<label class="form__label">Wybierz kurs</label>
+										<div class="form__line">
+										<select name="form[]" data-fls-select data-fls-select-modif="form">
+										<option value="1" selected>Stylizacja i laminacja brwi oraz rzęs 2w1</option>
+										<option value="3">Stylizacja i laminacja brwi</option>
+										<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
+										<option value="3">Stylizacja i laminacja brwi</option>
+										<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
+										<option value="3">Stylizacja i laminacja brwi</option>
+										<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
+										<option value="3">Stylizacja i laminacja brwi</option>
+										<option value="4">Laminacja brwi i rzęs + pielęgnacja</option>
+										</select>
+										</div>
+										</div>
+									-->
 									<div class="form__box form__box-textarea">
 										<label for="textarea" class="form__label">Wiadomść</label>
 										<div class="form__line form__line--textarea">
@@ -527,29 +531,31 @@
 							</div>
 						</div>
 						<div class="footer__column">
-							<div class="footer__subtitle">Nawigacja</div>
-							<nav class="footer__nav menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">O nas</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Programy kursów</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Opinie</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">FAQ</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Blog</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Konakt</a>
-									</li>
-								</ul>
-							</nav>
+							<div class="footer__box-column">
+								<div class="footer__subtitle">Nawigacja</div>
+								<nav class="footer__nav menu-footer">
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">O nas</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Programy kursów</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Opinie</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">FAQ</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Konakt</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="footer__bottom">
@@ -572,6 +578,12 @@
 			</li>
 			<li>
 				<a href="programs-course.html">programs-course</a>
+			</li>
+			<li>
+				<a href="privacy-policy.html">privacy-policy</a>
+			</li>
+			<li>
+				<a href="privacy-cookies.html">privacy-cookies</a>
 			</li>
 			<li>
 				<a href="page-error.html">page-error</a>

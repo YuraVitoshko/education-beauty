@@ -249,17 +249,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
-.benefits__list::-webkit-scrollbar {
-  height: 0.25rem;
-}
-.benefits__list::-webkit-scrollbar-thumb {
-  background-color: #454C52;
-  border-radius: 0.25rem;
-  width: 4.375rem;
-}
-.benefits__list::-webkit-scrollbar-track {
-  background-color: #FAFAFA;
-}
 .benefits__item {
   opacity: 0;
   transform: translateY(7%);
@@ -312,9 +301,6 @@
 .gallery {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
-}
-.gallery--tablet {
-  display: none;
 }
 .gallery__container {
   display: grid;
@@ -371,7 +357,7 @@
 .gallery__image {
   border-radius: 1rem;
   overflow: hidden;
-  aspect-ratio: 180/280;
+  aspect-ratio: 180/260;
   opacity: 0;
   transform: translateY(5%);
 }
@@ -389,6 +375,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery__box-pc--course .gallery__item {
+  aspect-ratio: 300/320;
 }
 .course-programs {
   padding-top: 3.75rem;
@@ -1064,6 +1054,12 @@
   }
 }
 
+@media (max-width: 81.25em) {
+  .gallery__box-pc--course .gallery__item {
+    aspect-ratio: 210/320;
+  }
+}
+
 @media (max-width: 79.25em) {
   .publications__btn-box {
     padding-top: 3.75rem;
@@ -1097,6 +1093,15 @@
   }
 }
 
+@media (max-width: 62.5em) {
+  .gallery__box-pc--course {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery__box-pc--course .gallery__item {
+    aspect-ratio: 320/320;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .hero__box::before {
     transform: scale(1.6);
@@ -1110,9 +1115,6 @@
   }
   .benefits__item:nth-child(2n+2) {
     transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
-  }
-  .gallery--tablet {
-    display: block;
   }
   .gallery__item {
     aspect-ratio: 235/320;
@@ -1179,10 +1181,10 @@
   }
   .content-hero__subtitle {
     justify-content: flex-start;
-    text-wrap: nowrap;
   }
   .content-hero__title {
     text-align: left;
+    justify-self: start;
     font-size: 1.875rem;
   }
   .content-hero__text {
@@ -1234,6 +1236,11 @@
   }
   .benefits__list {
     display: flex;
+  }
+  .benefits__list::-webkit-scrollbar {
+    display: none;
+  }
+  .benefits__list {
     overflow-x: auto;
     flex-wrap: nowrap;
     opacity: 0;
@@ -1271,6 +1278,9 @@
   }
   .gallery__image {
     aspect-ratio: 175/220;
+  }
+  .gallery__box-mobile--course .gallery__image {
+    aspect-ratio: 175/260;
   }
   .gallery-viewer {
     position: fixed;

@@ -242,7 +242,6 @@
 .pagination-blog__link--active {
   border: 0.0625rem solid #E35336;
 }
-
 .search-blog__input {
   width: 100%;
   caret-color: inherit;
@@ -292,6 +291,9 @@
   }
   .pagination-blog {
     flex-direction: column;
+  }
+  .search-blog {
+    width: 100%;
   }
 }
 @media (any-hover: hover) {

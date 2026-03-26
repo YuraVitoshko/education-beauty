@@ -16,19 +16,20 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<script src="https://static.elfsight.com/platform/platform.js?v=1774468129187" async></script>
+		<script src="https://static.elfsight.com/platform/platform.js?v=1774533053078" async></script>
 		<title>Course Info</title>
-		<script type="module" crossorigin="" src="./js/course.min.js?v=1774468129187"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774468129187">
-		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774468129187">
-		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774468129187">
-		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774468129187">
-		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774468129187">
-		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774468129187">
-		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774468129187">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774468129187">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774468129187">
-		<link rel="stylesheet" crossorigin="" href="./css/course.min.css?v=1774468129187">
+		<script type="module" crossorigin="" src="./js/course.min.js?v=1774533053078"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774533053078">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min2.js?v=1774533053078">
+		<link rel="modulepreload" crossorigin="" href="./js/tel-form.min.js?v=1774533053078">
+		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1774533053078">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1774533053078">
+		<link rel="modulepreload" crossorigin="" href="./js/index.min2.js?v=1774533053078">
+		<link rel="stylesheet" crossorigin="" href="./css/common.min.css?v=1774533053078">
+		<link rel="stylesheet" crossorigin="" href="./css/tel-form.min.css?v=1774533053078">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1774533053078">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min2.css?v=1774533053078">
+		<link rel="stylesheet" crossorigin="" href="./css/course.min.css?v=1774533053078">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -224,9 +225,12 @@
 					</div>
 				</div>
 			</header>
+			<div class="btn-up">
+				<img src="./assets/img/icons/arrow.svg" alt="Image">
+			</div>
 			<main class="page">
-				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774468129187"></script>
-				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774468129187">
+				<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js?v=1774533053078"></script>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css?v=1774533053078">
 				<div class="page__course">
 					<section class="course-hero">
 						<div class="course-hero__container">
@@ -386,7 +390,8 @@ alt="Fullscreen"></button>
 							</div>
 						</div>
 					</section>
-					<section id="gallery" class="gallery gallery--tablet">
+					<!-- <section id="gallery" class="gallery gallery--tablet"> -->
+					<section id="gallery" class="gallery">
 						<div class="gallery__container">
 							<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__header-block header-block header-block--mw">
 								<div class="header-block__subtitle">
@@ -398,7 +403,7 @@ alt="Fullscreen"></button>
 									Zobacz efekty naszych kursantek — wszystko to zrobiły samodzielnie, już w trakcie kursu.
 								</div>
 							</div>
-							<div class="gallery__box-pc">
+							<div class="gallery__box-pc gallery__box-pc--course">
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__item">
 									<img src="./assets/img/about-us/01.jpg" alt="Image">
 								</div>
@@ -448,7 +453,7 @@ alt="Fullscreen"></button>
 									<img src="./assets/img/gallery/12.jpg" alt="Image">
 								</div>
 							</div>
-							<div class="gallery__box-mobile">
+							<div class="gallery__box-mobile gallery__box-mobile--course">
 								<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="gallery__image">
 									<img class="gallery__preview" src="./assets/img/about-us/01.jpg" alt="Image">
 								</div>
@@ -967,7 +972,6 @@ alt="Fullscreen"></button>
 									</div>
 								</div>
 							</div>
-							
 						</div>
 					</section>
 					<section id="faq" class="faq faq--pb">
@@ -1144,29 +1148,31 @@ alt="Fullscreen"></button>
 							</div>
 						</div>
 						<div class="footer__column">
-							<div class="footer__subtitle">Nawigacja</div>
-							<nav class="footer__nav menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">O nas</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Programy kursów</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Opinie</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">FAQ</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Blog</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#" class="menu-footer__link">Konakt</a>
-									</li>
-								</ul>
-							</nav>
+							<div class="footer__box-column">
+								<div class="footer__subtitle">Nawigacja</div>
+								<nav class="footer__nav menu-footer">
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">O nas</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Programy kursów</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Opinie</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">FAQ</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Konakt</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="footer__bottom">
@@ -1189,6 +1195,12 @@ alt="Fullscreen"></button>
 			</li>
 			<li>
 				<a href="programs-course.html">programs-course</a>
+			</li>
+			<li>
+				<a href="privacy-policy.html">privacy-policy</a>
+			</li>
+			<li>
+				<a href="privacy-cookies.html">privacy-cookies</a>
 			</li>
 			<li>
 				<a href="page-error.html">page-error</a>
