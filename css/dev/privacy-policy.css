@@ -115,6 +115,10 @@
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
   }
+  .privacy-policy__container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
   .privacy-policy__title {
     font-size: 1.25rem;
   }
