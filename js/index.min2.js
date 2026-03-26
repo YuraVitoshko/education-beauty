@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",()=>{const n=document.querySelector
 		<div class="gallery-viewer__overlay"></div>
 
 		<button class="gallery-viewer__close">
-			<img src="./assets/img/icons/close.svg" alt="Close">
+			<img src="/assets/img/icons/close.svg" alt="Close">
 		</button>
 
 		<div class="gallery-viewer__content">

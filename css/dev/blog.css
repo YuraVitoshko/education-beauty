@@ -242,6 +242,16 @@
 .pagination-blog__link--active {
   border: 0.0625rem solid #E35336;
 }
+
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.search-blog {
+  position: relative;
+}
 .search-blog__input {
   width: 100%;
   caret-color: inherit;
@@ -265,6 +275,25 @@
   transition: opacity 0.3s;
   line-height: 1.5;
   color: #9EA5AD;
+}
+.search-blog__clear {
+  position: absolute;
+  top: 34%;
+  right: 1.125rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.search-blog__clear svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.search-blog__clear.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 @media (max-width: 75em) {
   .blog__items {
