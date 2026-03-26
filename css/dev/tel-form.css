@@ -410,6 +410,9 @@ textarea::placeholder {
   border-radius: 0.25rem 0.25rem 0 0;
   padding: 0.3125rem 0rem 0.625rem 0rem;
 }
+.form .select.--select-open .select__value::after {
+  transform: rotate(0deg);
+}
 .form .--select-tag {
   cursor: pointer;
 }
