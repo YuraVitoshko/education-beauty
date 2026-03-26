@@ -1426,7 +1426,6 @@
   .what-does-the-course__container {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    row-gap: 2rem;
   }
   .what-does-the-course__header-block > * {
     justify-self: start;
