@@ -326,14 +326,16 @@ input[type=search]::-webkit-search-cancel-button {
   }
 }
 @media (any-hover: hover) {
-  .blog__control:hover {
-    color: #E35336;
-    border-color: #E35336;
-  }
   .item-blog__link:hover {
     color: #C1462D;
   }
   .search-blog__input:hover {
+    border-color: #E35336;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .blog__control:hover {
+    color: #E35336;
     border-color: #E35336;
   }
 }
