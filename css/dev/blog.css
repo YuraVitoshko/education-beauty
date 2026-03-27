@@ -105,10 +105,10 @@
 }
 .item-blog__labels {
   position: absolute;
-  top: 1rem;
-  left: 1.125rem;
+  top: 1.25rem;
+  left: 1.25rem;
   display: grid;
-  row-gap: 0.375rem;
+  row-gap: 0.5rem;
 }
 .item-blog__label {
   justify-self: start;
@@ -201,10 +201,10 @@
   column-gap: 0.75rem;
   color: #E35336;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: color 0.3s;
 }
 .pagination-blog__prev:hover, .pagination-blog__next:hover {
-  opacity: 0.7;
+  color: #C1462D;
 }
 .pagination-blog__prev--disabled, .pagination-blog__next--disabled {
   opacity: 0.7;
@@ -240,6 +240,8 @@
   background: rgba(255, 90, 60, 0.08);
 }
 .pagination-blog__link--active {
+  cursor: default;
+  pointer-events: none;
   border: 0.0625rem solid #E35336;
 }
 
