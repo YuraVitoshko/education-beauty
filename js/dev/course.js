@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 document.addEventListener("DOMContentLoaded", () => {
   const videos = document.querySelectorAll(".video-block");
+  const isMobile = () => window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isAndroid = /Android/i.test(navigator.userAgent);
   videos.forEach((videoBlock) => {
     const video = videoBlock.querySelector("video");
     const nav = videoBlock.querySelector(".nav-video");
@@ -36,86 +39,142 @@ document.addEventListener("DOMContentLoaded", () => {
     const fullscreenIcon = fullscreenBtn?.querySelector("img");
     const muteIcon = muteBtn?.querySelector("img");
     let hideTimeout;
+    let controlsLocked = false;
     if (!video) return;
     video.muted = true;
-    if (pauseBtn) pauseBtn.style.display = "none";
-    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    video.autoplay = false;
+    pauseBtn && (pauseBtn.style.display = "none");
+    if (isIOS) {
       video.controls = true;
-      if (nav) nav.style.display = "none";
+      nav && (nav.style.display = "none");
+    } else {
+      video.controls = false;
+      nav && (nav.style.display = "flex");
     }
-    function showControls() {
+    const pauseOtherVideos = () => {
+      videos.forEach((vb) => {
+        const other = vb.querySelector("video");
+        if (other !== video && !other.paused) other.pause();
+      });
+    };
+    const showControls = () => {
       clearTimeout(hideTimeout);
       nav?.classList.remove("hidden");
-      if (!video.paused && document.fullscreenElement === videoBlock) {
-        hideTimeout = setTimeout(() => nav?.classList.add("hidden"), 2e3);
+      if (nav) {
+        nav.style.opacity = "1";
+        nav.style.transition = "opacity 0.2s";
       }
-    }
-    function hideControls() {
-      if (!video.paused && document.fullscreenElement === videoBlock) {
-        nav?.classList.add("hidden");
-      }
-    }
-    function updateButtons() {
+    };
+    const hideControls = (delay = 1e3) => {
+      const isFullscreen = document.fullscreenElement === videoBlock;
+      if (isAndroid && controlsLocked && !isFullscreen) return;
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(() => {
+        if (!video.paused) {
+          nav?.classList.add("hidden");
+          if (nav) nav.style.opacity = "0";
+        }
+      }, delay);
+    };
+    const updateButtons = () => {
       if (!playBtn || !pauseBtn) return;
       if (video.paused) {
         playBtn.style.display = "block";
         pauseBtn.style.display = "none";
-        nav?.classList.remove("hidden");
+        showControls();
       } else {
         playBtn.style.display = "none";
         pauseBtn.style.display = "block";
       }
-    }
-    playBtn?.addEventListener("click", () => {
+    };
+    video.addEventListener("play", () => {
+      pauseOtherVideos();
+      updateButtons();
+      const isFullscreen = document.fullscreenElement === videoBlock;
+      if (isAndroid && isFullscreen) hideControls(500);
+      else if (!isAndroid) hideControls(1e3);
+    });
+    video.addEventListener("pause", () => {
+      updateButtons();
+      showControls();
+      if (isAndroid) controlsLocked = true;
+      clearTimeout(hideTimeout);
+    });
+    playBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isFullscreen = document.fullscreenElement === videoBlock;
+      controlsLocked = false;
+      pauseOtherVideos();
       video.play();
       updateButtons();
-      showControls();
+      if (isAndroid && isFullscreen) hideControls(500);
+      else if (!isAndroid && isFullscreen) hideControls(1e3);
+      else showControls();
     });
-    pauseBtn?.addEventListener("click", () => {
+    pauseBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
       video.pause();
-      updateButtons();
-      showControls();
     });
-    video.addEventListener("play", updateButtons);
-    video.addEventListener("pause", updateButtons);
-    muteBtn?.addEventListener("click", () => {
+    muteBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
       video.muted = !video.muted;
-      if (muteIcon) {
-        muteIcon.src = video.muted ? "assets/img/icons/sound-off.svg" : "assets/img/icons/sound-on.svg";
-      }
+      if (muteIcon) muteIcon.src = video.muted ? "assets/img/icons/sound-off.svg" : "assets/img/icons/sound-on.svg";
     });
-    fullscreenBtn?.addEventListener("click", () => {
-      if (document.fullscreenElement === videoBlock) {
-        document.exitFullscreen();
-      } else {
-        videoBlock.requestFullscreen?.();
-      }
-    });
-    videoBlock.addEventListener("mouseenter", showControls);
-    videoBlock.addEventListener("mousemove", showControls);
-    videoBlock.addEventListener("mouseleave", hideControls);
-    videoBlock.addEventListener("touchstart", () => {
-      if (nav?.classList.contains("hidden")) {
-        showControls();
-      } else if (!video.paused) {
-        nav?.classList.add("hidden");
-      }
+    fullscreenBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (document.fullscreenElement === videoBlock) document.exitFullscreen();
+      else videoBlock.requestFullscreen?.();
     });
     document.addEventListener("fullscreenchange", () => {
       const box = videoBlock.querySelector(".video-block__box");
       if (document.fullscreenElement === videoBlock) {
-        if (fullscreenIcon) fullscreenIcon.src = "assets/img/icons/fullscreen-exit.svg";
+        fullscreenIcon && (fullscreenIcon.src = "assets/img/icons/fullscreen-exit.svg");
         video.style.objectFit = "contain";
-        hideTimeout = setTimeout(() => nav?.classList.add("hidden"), 2e3);
+        showControls();
+        hideControls(1e3);
+        video.style.width = window.innerWidth + "px";
+        video.style.height = window.innerHeight + "px";
         if (box) box.style.maxWidth = "100%";
+        if (isAndroid) {
+          const adjustVideoSize = () => {
+            video.style.width = window.innerWidth + "px";
+            video.style.height = window.innerHeight + "px";
+          };
+          window.addEventListener("resize", adjustVideoSize);
+          videoBlock._androidResizeHandler = adjustVideoSize;
+        }
       } else {
-        if (fullscreenIcon) fullscreenIcon.src = "assets/img/icons/fullscreen.svg";
+        fullscreenIcon && (fullscreenIcon.src = "assets/img/icons/fullscreen.svg");
         video.style.objectFit = "cover";
+        video.style.width = "";
+        video.style.height = "";
         nav?.classList.remove("hidden");
-        clearTimeout(hideTimeout);
         if (box) box.style.maxWidth = "580px";
+        if (isAndroid && videoBlock._androidResizeHandler) {
+          window.removeEventListener("resize", videoBlock._androidResizeHandler);
+          delete videoBlock._androidResizeHandler;
+        }
       }
     });
+    if (!isMobile()) {
+      videoBlock.addEventListener("mousemove", () => {
+        showControls();
+        hideControls(500);
+      });
+      videoBlock.addEventListener("mouseleave", () => {
+        if (!video.paused) hideControls(200);
+      });
+    } else if (isAndroid) {
+      videoBlock.addEventListener("touchstart", () => {
+        if (!video.paused) {
+          showControls();
+          controlsLocked = true;
+          clearTimeout(hideTimeout);
+        }
+      });
+    } else {
+      videoBlock.addEventListener("touchstart", () => showControls());
+    }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) video.pause();
