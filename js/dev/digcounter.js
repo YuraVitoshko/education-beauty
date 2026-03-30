@@ -1,4 +1,3 @@
-import { g as getDigFormat } from "./common.min.js";
 function digitsCounter() {
   function digitsCountersInit(digitsCountersItems) {
     let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-fls-digcounter]");
@@ -11,6 +10,9 @@ function digitsCounter() {
         digitsCountersAnimate(digitsCounter2);
       });
     }
+  }
+  function getDigFormat(value, separator = " ") {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator);
   }
   function digitsCountersAnimate(digitsCounter2) {
     let startTimestamp = null;
