@@ -937,6 +937,14 @@ circle {
   line-height: 1.2;
   letter-spacing: -2%;
 }
+.item-statistic-block__num::after {
+  content: "+";
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+  padding-left: 0.125rem;
+}
 .item-statistic-block__text {
   font-size: 0.875rem;
   font-weight: 500;
